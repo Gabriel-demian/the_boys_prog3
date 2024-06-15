@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Boys - Contacto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <a href="index.html"><img src="images/web_logo.png" alt="The Boys Logo"></a>
+    </div>
+    <nav id="menu_bar" class="">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="personajes.html">Personajes</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="resenas.html">Reseñas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+  </header>
+
+  <section class="contacto">
+    <h1>Contáctanos</h1>
+    <p>¿Tienes alguna pregunta o comentario para The Boys? ¡No dudes en contactarnos!</p>
+
+    <form action="#">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 The Boys - Todos los derechos reservados</p>
+    <a href="#"><img src="images/social_media_icon1.png" alt="Social Media 1"></a>
+    <a href="#"><img src="images/social_media_icon2.png" alt="Social Media 2"></a>
+    <a href="#"><img src="images/social_media_icon3.png" alt="Social Media 3"></a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

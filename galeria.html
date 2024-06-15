@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <title>Da Boys</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <a href="index.html"><img src="images/web_logo.png" alt="Logo"></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="resenas.html">Reseñas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <article class="galeria_principal"></article>
+
+        <h1>GALERÍA</h1>
+        <article class="secundario">
+            <a class="example-image-link" href="images/galeria/Billy_Butcher.jpg" data-lightbox="The Boys Billy Butcher" data-title="The Boys Billy Butcher">
+                <img class="example-image" src="images/galeria/Billy_Butcher_mini.png" alt="The Boys Billy Butcher"/>
+            </a>
+            <a class="example-image-link" href="images/galeria/Kimiko.jpg" data-lightbox="The Boys Kimiko" data-title="The Boys Kimiko">
+                <img class="example-image" src="images/galeria/Kimiko_mini.png" alt="The Boys Kimiko"/>
+            </a>
+            <a class="example-image-link" href="images/galeria/Mothersmilk.jpg" data-lightbox="The Boys Mothersmilk" data-title="The Boys Mothersmilk">
+                <img class="example-image" src="images/galeria/Mothersmilk_mini.png" alt="The Boys Mothersmilk"/>
+            </a>
+
+            <a class="example-image-link" href="images/galeria/Firecracker.png" data-lightbox="The Boys Firecracker" data-title="The Boys Firecracker">
+                <img class="example-image" src="images/galeria/Firecracker_mini.png" alt="The Boys Firecracker"/>
+            </a>
+            <a class="example-image-link" href="images/galeria/Homelander.jpg" data-lightbox="The Boys Homelander" data-title="The Boys Homelander">
+                <img class="example-image" src="images/galeria/Homelander_mini.png" alt="The Boys Homelander"/>
+            </a>
+            <a class="example-image-link" href="images/galeria/Soldier_Boy.jpg" data-lightbox="The Boys Soldier Boy" data-title="The Boys Soldier Boy">
+                <img class="example-image" src="images/galeria/Soldier_Boy_mini.png" alt="The Boys Soldier Boy"/>
+            </a>
+        </article>
+
+        <article class="trailer">
+            <iframe width="720" height="406.5" src="https://www.youtube.com/embed/AD0qUhZpbfc" title="The Boys – Trailer Oficial | Amazon Prime Video" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </article>
+        
+    </section>
+
+    <footer>
+        <a href="https://www.facebook.com/TheBoysTV/?locale=es_LA" target="_blank">
+          <img src="images/redes/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://x.com/TheBoysTV" target="_blank">
+          <img src="images/redes/twitter.png" alt="Twitter">
+        </a>
+        <a href="https://www.youtube.com/watch?v=8-PTZXcmdOA" target="_blank">
+          <img src="images/redes/youtube.png" alt="Youtube">
+        </a>
+        <a href="https://www.instagram.com/theboystv/?hl=es" target="_blank">
+          <img src="images/redes/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.amazon.com/dp/B09WV8HF7Q/" target="_blank">
+            <img src="images/redes/amazon.png" alt="Amazon Prime">
+          </a>
+      </footer>
+
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

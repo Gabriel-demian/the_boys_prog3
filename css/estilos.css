@@ -1,0 +1,214 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-family: 'Rubik', sans-serif;
+	background-color: black;
+}
+
+header {
+	padding: 2%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #212121; 
+}
+
+img[src="images/web_logo.png"] {
+	height: 80px;
+	max-width: 100%;
+}
+
+.icon {
+	display: none; 
+}
+  
+nav ul{
+	margin-top: 3%;
+}
+nav ul li{
+	display: inline-block;
+}
+nav ul li a{
+	font-size: 1.2rem;
+	padding-right: 2rem;
+	text-transform: uppercase;
+	color: red;
+}
+nav ul li a:hover{
+	text-decoration: underline;
+	font-weight: 800;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+.icon { display: none; }
+section{
+	max-width: 1300px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.principal{
+	width: 100%;
+	height: 650px;
+	background-image: url(../images/Homelander_1.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+}
+.principal div img{
+	width: 70%;
+}
+.principal div h3{
+	color: black;
+}
+.galeria_principal{
+	width: 100%;
+	height: 650px;
+	background-image: url(../images/galeria/characters.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+}
+.galeria_principal div img{
+	width: 70%;
+}
+.galeria_principal div h3{
+	color: black;
+}
+.secundario {
+	margin-top: 5%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2%; 
+}
+.secundario a img {
+	width: 100%;
+	margin-bottom: 2rem;
+	border-radius: 5%;
+	border: 5px solid red;
+}
+.secundario div h4{
+	color: red;
+}
+h4{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 350px;
+}
+footer a { 
+	margin-right: .5%;
+}
+footer a img{ 
+	max-width: 2.5rem;
+	width: 100%;
+	height: auto;
+}
+h1{
+	text-align: center;
+	margin-top: 1.5em;
+}
+.trailer {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 480px) { 
+header{
+	padding: 1%;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: #ffffff;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+.icon {
+	display: block;
+	color: white;
+}
+.galeria_principal {
+    background-size: contain;
+  }
+header div, header a {
+	flex: 1 0 50%;
+}
+header nav {
+	flex-basis: 100%;
+}
+img[src="images/web_logo.png"] {
+	height: 30%;
+}
+.icon {
+	display: block;
+	padding-right: 0.6rem;
+	text-align: right;
+}
+nav ul {
+	display: none;
+}
+nav.responsive ul {
+	display: block;
+}
+nav.responsive ul li {
+	display: block;
+	text-align: center;
+	padding: 0.5rem;
+}
+nav.responsive ul li a {
+	padding-right: 0;
+}
+section{
+	max-width: 480px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.principal{
+	height: 250px;
+	padding: 10%;
+}
+.secundario{
+	margin-top: 1%;
+	display: block;
+}
+.secundario div{
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+}
+.secundario div a img{
+	margin-bottom: 1rem;
+}
+h2{
+	font-size: 1rem;
+}
+h4{
+	font-size: 1rem;
+}
+footer{
+	height: 80px;
+	justify-content: space-evenly;
+}
+footer a img{
+	max-width: 3rem;
+}
+}
