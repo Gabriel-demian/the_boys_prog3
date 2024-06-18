@@ -247,14 +247,12 @@ textarea {
   height: 30vh;
 }
 
-.character_logo_boys{
-  position: absolute; 
-  top: 0; 
+.character_logo_boys {
+  position: absolute;
+  top: 0;
   left: 0;
+  width: 35%;
 }
-
-
-
 
 @media (max-width: 480px) {
   header {
@@ -356,5 +354,9 @@ textarea {
 
   footer a img {
     max-width: 3rem;
+  }
+
+  .character_logo_boys {
+    width: 50%; /* Set width to 50% on screens smaller than 768px */
   }
 }
