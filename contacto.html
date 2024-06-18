@@ -1,53 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Boys - Contacto</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div>
-      <a href="index.html"><img src="images/web_logo.png" alt="The Boys Logo"></a>
-    </div>
-    <nav id="menu_bar" class="">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="personajes.html">Personajes</a></li>
-        <li><a href="galeria.html">Galería</a></li>
-        <li><a href="resenas.html">Reseñas</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.6.2/dist/fancybox.css"/>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body class="body_contacto">
+    <header>
+      <div>
+        <a href="index.html"><img src="images/web_logo.png" alt="Logo" /></a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+        ><i class="fa fa-bars"></i
+      ></a>
+      <nav id="menu_bar">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="resenas.html">Reseñas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <section class="contacto">
-    <h1>Contáctanos</h1>
-    <p>¿Tienes alguna pregunta o comentario para The Boys? ¡No dudes en contactarnos!</p>
+    <section class="secundario_contacto">
+      <article class="Contacto">
+        <form action="#" method="post">
+          <div class="formulario">
+            <div class="input">
+              <label for="nombres">Nombre/s</label>
+              <input
+                type="text"
+                name="nombres"
+                placeholder="Ingrese su nombre..."
+                required
+              />
+            </div>
 
-    <form action="#">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
+            <div class="input">
+              <label for="Apellido">Apellido/s</label>
+              <input
+                type="text"
+                name="Apellido"
+                placeholder="Ingrese su Apellido..."
+                required
+              />
+            </div>
 
-      <label for="correo">Correo electrónico:</label>
-      <input type="email" id="correo" name="correo" required>
+            <div class="input">
+              <label for="Email">Email</label>
+              <input
+                type="email"
+                name="Email"
+                placeholder="Ingrese su Email..."
+                required
+              />
+            </div>
 
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            <div class="input">
+              <label for="Telefono">Celular:</label>
+              <input
+                type="tel"
+                name="Telefono"
+                placeholder="Ingrese su Celular..."
+                required
+              />
+            </div>
 
-      <button type="submit">Enviar mensaje</button>
-    </form>
-  </section>
+            <div class="input">
+              <label for="reseña">Reseña:</label>
+              <textarea
+                rows="3"
+                cols="3"
+                name="reseña"
+                placeholder="Ingrese su Reseña..."
+              ></textarea>
+            </div>
 
-  <footer>
-    <p>&copy; 2024 The Boys - Todos los derechos reservados</p>
-    <a href="#"><img src="images/social_media_icon1.png" alt="Social Media 1"></a>
-    <a href="#"><img src="images/social_media_icon2.png" alt="Social Media 2"></a>
-    <a href="#"><img src="images/social_media_icon3.png" alt="Social Media 3"></a>
-  </footer>
+            <button type="submit" class="submit-btn">Enviar</button>
+          </div>
+        </form>
+      </article>
+    </section>
 
-  <script src="script.js"></script>
-</body>
+    <footer></footer>
+
+    <script type="text/javascript">
+      function myFunction() {
+        var x = document.getElementById("menu_bar");
+        if (x.className === "") {
+          x.className += " responsive";
+        } else {
+          x.className = "";
+        }
+      }
+    </script>
+  </body>
 </html>
