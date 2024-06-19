@@ -1,21 +1,20 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: "Rubik", sans-serif;
-  background-color: black;
+  font-family: Rubik, sans-serif;
+  background-color: #000;
 }
 
-/* ---- Header ---- */
 header {
-  padding: 2%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #212121;
   border-bottom: 2px solid #8b0000;
+  padding: 2%;
 }
 
 img[src="images/web_logo.png"] {
@@ -23,15 +22,11 @@ img[src="images/web_logo.png"] {
   max-width: 100%;
 }
 
-.icon {
-  display: none;
-}
-
 nav ul {
   margin-top: 0;
-  padding: 0;
   text-align: center;
   list-style: none;
+  padding: 0;
 }
 
 nav ul li {
@@ -42,15 +37,15 @@ nav ul li {
 nav ul li a {
   font-size: 1.2rem;
   text-transform: uppercase;
-  color: #ff0000;
+  color: red;
   text-decoration: none;
   position: relative;
-  transition: color 0.3s ease, text-shadow 0.3s ease; 
+  transition: color .3s ease, text-shadow .3s ease;
 }
 
 nav ul li a:hover {
-  color: #8b0000; 
-  text-shadow: 0 0 10px #ff0000; 
+  color: #8b0000;
+  text-shadow: 0 0 10px red;
 }
 
 nav ul li a::after {
@@ -60,10 +55,10 @@ nav ul li a::after {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #ff0000;
+  background-color: red;
   visibility: hidden;
   transform: scaleX(0);
-  transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 nav ul li a:hover::after {
@@ -76,12 +71,6 @@ a {
   color: #000;
 }
 
-.icon {
-  display: none;
-}
-
-/* ---- Header ---- */
-
 section {
   max-width: 1300px;
   width: 90%;
@@ -89,7 +78,6 @@ section {
   margin-right: auto;
 }
 
-/* ---- Principal ---- */
 .principal {
   width: 100%;
   height: 650px;
@@ -99,19 +87,9 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  color: #fff;
 }
 
-.principal div img {
-  width: 70%;
-}
-
-.principal div h3 {
-  color: black;
-}
-/* ---- Principal ---- */
-
-/* ---- Galeria Principal ---- */
 .galeria_principal {
   width: 100%;
   height: 650px;
@@ -121,19 +99,9 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  color: #fff;
 }
 
-.galeria_principal div img {
-  width: 70%;
-}
-
-.galeria_principal div h3 {
-  color: black;
-}
-/* ---- Galeria Principal ---- */
-
-/* ---- Galeria Personajes ---- */
 .galeria_personajes {
   width: 100%;
   height: 650px;
@@ -156,27 +124,27 @@ section {
 .col-sm-6 {
   flex: 0 0 50%;
   max-width: 50%;
-  padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px;
 }
 
 .texto {
-  color: white;
+  color: #FFF;
   text-align: center;
   padding: 20px;
 }
 
 .card-title {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
 h3 {
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
@@ -185,16 +153,16 @@ h3 {
   font-weight: 500;
   line-height: 1.5;
   border-radius: 20px;
-  padding: 14px 30px;
   background-color: #fff;
   color: #000;
   border: 1px solid #fff;
   box-sizing: border-box;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color .3s ease, color .3s ease;
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  margin-top: 20px; 
+  margin-top: 20px;
+  padding: 14px 30px;
 }
 
 .btn-lander:hover {
@@ -202,10 +170,6 @@ h3 {
   color: #fff;
 }
 
-
-/* ---- Galeria Personajes ---- */
-
-/* ---- Secundario ---- */
 .secundario {
   margin-top: 5%;
   display: grid;
@@ -225,12 +189,11 @@ article.secundario div {
 }
 
 article.secundario h4 {
-  color: #ff0000; 
-  text-shadow: 0 0 10px #ff0000; 
+  color: red;
+  text-shadow: 0 0 10px red;
   margin-top: 0;
   font-size: 1.5rem;
 }
-/* ---- Secundario ---- */
 
 h4 {
   font-size: 1.5rem;
@@ -249,7 +212,6 @@ h1 {
   justify-content: center;
 }
 
-/* ---- Footer ---- */
 footer {
   background-image: url(../images/b.jpg);
   height: 20vh;
@@ -257,11 +219,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2%;
+  text-align: center;
+  background-color: #212121;
+  border-top: 2px solid #8b0000;
+  padding: 20px;
 }
 
 footer a {
-  margin-right: 0.5%;
+  margin-right: .5%;
 }
 
 footer a img {
@@ -269,9 +234,7 @@ footer a img {
   width: 100%;
   height: auto;
 }
-/* ---- Footer ---- */
 
-/*-------------------------------------------Formulario-------------------------------------------*/
 .body_contacto {
   background-image: url(../images/wallpaper.jpg);
   background-size: cover;
@@ -280,19 +243,19 @@ footer a img {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Rubik', sans-serif;
+  font-family: Rubik, sans-serif;
   overflow: hidden;
 }
 
 .header_contacto {
   width: 100%;
-  padding: 1% 2%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #212121;
   position: absolute;
   top: 0;
+  padding: 1% 2%;
 }
 
 .secundario_contacto {
@@ -308,11 +271,11 @@ footer a img {
   flex-direction: column;
   align-items: center;
   width: 480px;
-  padding: 20px;
   background-color: rgba(0, 0, 0, 0.8);
   border: 2px solid #8b0000;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  padding: 20px;
 }
 
 .input {
@@ -324,57 +287,57 @@ footer a img {
   display: block;
   margin-bottom: 5px;
   font-size: 1.1rem;
-  color: #ff0000;
+  color: red;
   text-shadow: 0 0 5px #8b0000;
 }
 
 .input input,
 .input textarea {
   width: 100%;
-  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f2f2f2;
   font-size: 1rem;
-  color: black;
+  color: #000;
   box-sizing: border-box;
   max-width: 100%;
-  margin: 0 auto; 
+  margin: 0 auto;
+  padding: 10px;
 }
 
 .input textarea {
   resize: vertical;
 }
+
 .input input:focus,
 .input textarea:focus {
   outline: none;
-  border-color: #ff0000;
-  box-shadow: 0 0 5px #ff0000;
+  box-shadow: 0 0 5px red;
+  border-color: red;
 }
 
 .submit-btn {
   width: 100%;
-  padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #ff0000;
-  color: white;
+  background-color: red;
+  color: #FFF;
   font-size: 1.2rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color .3s ease;
+  padding: 10px;
 }
 
 .submit-btn:hover {
   background-color: #8b0000;
-  box-shadow: 0 0 10px #ff0000;
+  box-shadow: 0 0 10px red;
 }
-/*-----------------------------------------------------*/
+
 .character_btn {
   font-size: 20px;
   font-weight: 500;
   line-height: 23px;
   border-radius: 999px;
-  padding: 14px 20px;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -382,40 +345,30 @@ footer a img {
   color: #fff;
   border: 1px solid #fff;
   box-sizing: border-box;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color .3s ease, color .3s ease;
+  padding: 14px 20px;
 }
-
-.character_btn:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-button.active {
-  background-color: #fff;
-  color: #000;
-}
-/*-----------------------------------------------------*/
 
 .carousel-inner {
   height: 80vh;
 }
 
 .carousel-carouselTheBoys {
-  background-image: url(../images/characters/boys.jpg); 
+  background-image: url(../images/characters/boys.jpg);
   height: 80vh;
   background-size: cover;
   background-position: center;
 }
 
 .carousel-carouselTheSeven {
-  background-image: url(../images/characters/seven.jpg); 
+  background-image: url(../images/characters/seven.jpg);
   height: 80vh;
   background-size: cover;
   background-position: center;
 }
 
 .carousel-carouselVought {
-  background-image: url(../images/characters/vought.jpg); 
+  background-image: url(../images/characters/vought.jpg);
   height: 80vh;
   background-size: cover;
   background-position: center;
@@ -432,10 +385,10 @@ button.active {
   object-fit: cover;
 }
 
-.character_logo_seven{
-  position: absolute; 
-  top: 0; 
-  left: 0; 
+.character_logo_seven {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 30vh;
 }
 
@@ -446,16 +399,10 @@ button.active {
   width: 35%;
 }
 
-.hidden {
-  display: none;
-}
-
-/* ---- Main ---- */
 main {
   padding: 20px;
 }
 
-/* ---- Reviews Section ---- */
 .reviews-section {
   max-width: 1200px;
   margin: 0 auto;
@@ -463,8 +410,8 @@ main {
 
 .reviews-section h1 {
   text-align: center;
-  color: #ff0000;
-  text-shadow: 0 0 10px #ff0000;
+  color: red;
+  text-shadow: 0 0 10px red;
   margin-bottom: 20px;
 }
 
@@ -476,20 +423,20 @@ main {
 
 .review {
   background-color: #1c1c1c;
-  padding: 20px;
   border: 2px solid #8b0000;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
 }
 
 .review-header h2 {
-  color: #ff0000;
+  color: red;
   margin: 0;
 }
 
 .review-header .review-date {
   color: #888;
-  font-size: 0.9rem;
+  font-size: .9rem;
   margin-top: 5px;
 }
 
@@ -499,80 +446,36 @@ main {
   margin: 10px 0;
 }
 
-/* ---- Footer ---- */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #212121;
-  border-top: 2px solid #8b0000;
-}
-
 footer p {
-  margin: 0;
   color: #888;
+  margin: 0;
 }
-@media (max-width: 480px) {
 
+.icon,
+.hidden {
+  display: none;
+}
+
+.principal div img,
+.galeria_principal div img {
+  width: 70%;
+}
+
+.principal div h3,
+.galeria_principal div h3 {
+  color: #000;
+}
+
+.character_btn:hover,
+button.active {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width: 480px) {
   .formulario {
     width: 100%;
     padding: 15px;
-  }
-  
-  header {
-    padding: 1%;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: #ffffff;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
-
-  .icon {
-    display: block;
-    color: white;
-  }
-
-  .galeria_principal {
-    background-size: contain;
-  }
-
-  header div,
-  header a {
-    flex: 1 0 50%;
-  }
-
-  header nav {
-    flex-basis: 100%;
-  }
-
-  img[src="images/web_logo.png"] {
-    height: 30%;
-  }
-
-  .icon {
-    display: block;
-    padding-right: 0.6rem;
-    text-align: right;
-  }
-
-  nav ul {
-    display: none;
-  }
-
-  nav.responsive ul {
-    display: block;
-  }
-
-  nav.responsive ul li {
-    display: block;
-    text-align: center;
-    padding: 0.5rem;
-  }
-
-  nav.responsive ul li a {
-    padding-right: 0;
   }
 
   section {
@@ -602,14 +505,6 @@ footer p {
     margin-bottom: 1rem;
   }
 
-  h2 {
-    font-size: 1rem;
-  }
-
-  h4 {
-    font-size: 1rem;
-  }
-
   footer {
     height: 80px;
     justify-content: space-evenly;
@@ -620,6 +515,11 @@ footer p {
   }
 
   .character_logo_boys {
-    width: 50%; /* Set width to 50% on screens smaller than 768px */
+    width: 50%;
+  }
+
+  h2,
+  h4 {
+    font-size: 1rem;
   }
 }

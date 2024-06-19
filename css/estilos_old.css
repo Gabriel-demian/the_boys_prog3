@@ -1,0 +1,657 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: black;
+}
+
+/* ---- Header ---- */
+header {
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #212121;
+  border-bottom: 2px solid #8b0000;
+}
+
+img[src="images/web_logo.png"] {
+  height: 80px;
+  max-width: 100%;
+}
+
+/* Estilos para icono de menú hamburguesa */
+.icon {
+  display: none;
+}
+
+nav ul {
+  margin-top: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #ff0000;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #8b0000;
+  text-shadow: 0 0 10px #ff0000;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff0000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* ---- Header ---- */
+
+section {
+  max-width: 1300px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---- Principal ---- */
+.principal {
+  width: 100%;
+  height: 650px;
+  background-image: url(../images/Homelander_1.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.principal div img {
+  width: 70%;
+}
+
+.principal div h3 {
+  color: black;
+}
+/* ---- Principal ---- */
+
+/* ---- Galeria Principal ---- */
+.galeria_principal {
+  width: 100%;
+  height: 650px;
+  background-image: url(../images/galeria/characters.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.galeria_principal div img {
+  width: 70%;
+}
+
+.galeria_principal div h3 {
+  color: black;
+}
+/* ---- Galeria Principal ---- */
+
+/* ---- Galeria Personajes ---- */
+.galeria_personajes {
+  width: 100%;
+  height: 650px;
+  background-image: url(../images/characters/voult.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-sm-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn-lander {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  border-radius: 20px;
+  padding: 14px 30px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px; 
+}
+
+.btn-lander:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+/* ---- Galeria Personajes ---- */
+
+/* ---- Secundario ---- */
+.secundario {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2%;
+}
+
+article.secundario div {
+  text-align: center;
+}
+
+.secundario a img {
+  width: 100%;
+  margin-bottom: 5px;
+  border-radius: 5%;
+  border: 5px solid red;
+}
+
+article.secundario h4 {
+  color: #ff0000; 
+  text-shadow: 0 0 10px #ff0000; 
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+/* ---- Secundario ---- */
+
+h4 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.trailer {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---- Footer ---- */
+footer {
+  background-image: url(../images/b.jpg);
+  height: 20vh;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+footer a {
+  margin-right: 0.5%;
+}
+
+footer a img {
+  max-width: 2.5rem;
+  width: 100%;
+  height: auto;
+}
+/* ---- Footer ---- */
+
+/*-------------------------------------------Formulario-------------------------------------------*/
+.body_contacto {
+  background-image: url(../images/wallpaper.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rubik', sans-serif;
+  overflow: hidden;
+}
+
+.header_contacto {
+  width: 100%;
+  padding: 1% 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #212121;
+  position: absolute;
+  top: 0;
+}
+
+.secundario_contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 480px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #8b0000;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.input {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  color: #ff0000;
+  text-shadow: 0 0 5px #8b0000;
+}
+
+.input input,
+.input textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  font-size: 1rem;
+  color: black;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0 auto; 
+}
+
+.input textarea {
+  resize: vertical;
+}
+.input input:focus,
+.input textarea:focus {
+  outline: none;
+  border-color: #ff0000;
+  box-shadow: 0 0 5px #ff0000;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff0000;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #8b0000;
+  box-shadow: 0 0 10px #ff0000;
+}
+/*-----------------------------------------------------*/
+.character_btn {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+  border-radius: 999px;
+  padding: 14px 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.character_btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+button.active {
+  background-color: #fff;
+  color: #000;
+}
+/*-----------------------------------------------------*/
+
+.carousel-inner {
+  height: 80vh;
+}
+
+.carousel-carouselTheBoys {
+  background-image: url(../images/characters/boys.jpg); 
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-carouselTheSeven {
+  background-image: url(../images/characters/seven.jpg); 
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-carouselVought {
+  background-image: url(../images/characters/vought.jpg); 
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-carouselElectoral {
+  background-image: url(../images/characters/candidates.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-item img {
+  object-fit: cover;
+}
+
+.character_logo_seven{
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  height: 30vh;
+}
+
+.character_logo_boys {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ---- Main ---- */
+main {
+  padding: 20px;
+}
+
+/* ---- Reviews Section ---- */
+.reviews-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reviews-section h1 {
+  text-align: center;
+  color: #ff0000;
+  text-shadow: 0 0 10px #ff0000;
+  margin-bottom: 20px;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.review {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border: 2px solid #8b0000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.review-header h2 {
+  color: #ff0000;
+  margin: 0;
+}
+
+.review-header .review-date {
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.review-content p {
+  line-height: 1.6;
+  color: #ccc;
+  margin: 10px 0;
+}
+
+/* ---- Footer ---- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #212121;
+  border-top: 2px solid #8b0000;
+}
+
+footer p {
+  margin: 0;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  img[src="images/web_logo.png"] {
+    display: none; /* Ocultar logo en dispositivos móviles */
+  }
+
+  .icon {
+    display: block;
+    font-size: 1.5rem;
+    color: #ff0000;
+    margin-left: auto;
+    cursor: pointer; /* Añadir cursor de puntero */
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    padding: 10px;
+    width: 100%;
+    display: block;
+    font-size: 1.1rem;
+    color: #ff0000;
+    background-color: #212121;
+    border-bottom: 1px solid #8b0000;
+  }
+
+  nav ul li a:hover {
+    background-color: #8b0000;
+    color: #ffffff;
+    text-shadow: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .formulario {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  header{
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  header div, header a {
+    flex: 1 0 50%;
+  }
+  header nav {
+    flex-basis: 100%;
+  }
+  .icon {
+    display: block;
+    padding-right: 0.6rem;
+    text-align: right;
+  }
+  nav ul {
+    display: none;
+  }
+  nav.responsive ul {
+    display: block;
+  }
+  nav.responsive ul li {
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  nav.responsive ul li a {
+    padding-right: 0;
+  }
+
+  section {
+    max-width: 480px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .principal {
+    height: 250px;
+    padding: 10%;
+  }
+
+  .secundario {
+    margin-top: 1%;
+    display: block;
+  }
+
+  .secundario div {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+  }
+
+  .secundario div a img {
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  footer {
+    height: 80px;
+    justify-content: space-evenly;
+  }
+
+  footer a img {
+    max-width: 3rem;
+  }
+
+  .character_logo_boys {
+    width: 50%; /* Set width to 50% on screens smaller than 768px */
+  }
+}

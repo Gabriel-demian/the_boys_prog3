@@ -83,8 +83,15 @@ document.getElementById('electoralCandidates').addEventListener('click', functio
 function myFunction() {
     var x = document.getElementById("menu_bar");
     if (x.className === "") {
-      x.className += " responsive";
+        x.className += " responsive";
     } else {
-      x.className = "";
+        x.className = "";
     }
-  }
+}
+
+function myFunction() {
+    var icon = document.querySelector('.icon');
+    var nav = document.querySelector('nav ul');
+    icon.classList.toggle('active');
+    nav.classList.toggle('active');
+}
