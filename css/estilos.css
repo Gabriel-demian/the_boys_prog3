@@ -296,6 +296,11 @@ textarea {
   color: #000;
 }
 
+button.active {
+  background-color: #fff;
+  color: #000;
+}
+
 /*-----------------------------------------------------*/
 
 .carousel-inner {
