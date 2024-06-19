@@ -19,33 +19,11 @@
 
     <title>Da Boys</title>
 
-
 </head>
 
 <body style="background-color: #00050d;">
 
-    <header>
-        <div>
-            <a href="index.html"><img src="images/web_logo.png" alt="Logo"></a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-        <nav id="menu_bar" class="">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="personajes.html">Personajes</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="reviews.html">Reseñas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    
-    <section>
-        <div class="row">
-            
-        </div>
-    </section>
+    <header id="header"></header>
 
     <section>
         <article class="galeria_personajes">
@@ -63,9 +41,6 @@
             </div>
         </article>
     </section>
-
-
-      
 
     <section>
         <ul class="nav nav-tabs">
@@ -369,90 +344,10 @@
 
         <!------------------------------------------------------------------------->
     </section>
-    
 
-    <footer style="background-image: url(../images/b.jpg); height: 20vh; margin-top: 5vh;">
-        <a href="https://www.facebook.com/TheBoysTV/?locale=es_LA" target="_blank">
-            <img src="images/redes/facebook.png" alt="Facebook">
-        </a>
-        <a href="https://x.com/TheBoysTV" target="_blank">
-            <img src="images/redes/twitter.png" alt="Twitter">
-        </a>
-        <a href="https://www.youtube.com/watch?v=8-PTZXcmdOA" target="_blank">
-            <img src="images/redes/youtube.png" alt="Youtube">
-        </a>
-        <a href="https://www.instagram.com/theboystv/?hl=es" target="_blank">
-            <img src="images/redes/instagram.png" alt="Instagram">
-        </a>
-        <a href="https://www.amazon.com/dp/B09WV8HF7Q/" target="_blank">
-            <img src="images/redes/amazon.png" alt="Amazon Prime">
-        </a>
-    </footer>
+    <div id="footer"></div>
 
-
-    <script>
-        document.getElementById('theSeven').addEventListener('click', function () {
-            document.getElementById('carouselTheSeven').classList.remove('hidden');
-            document.getElementById('carouselTheBoys').classList.add('hidden');
-            document.getElementById('carouselVought').classList.add('hidden');
-            document.getElementById('carouselElectoral').classList.add('hidden');
-
-            document.getElementById('theSeven').classList.add('active');
-            document.getElementById('theBoys').classList.remove('active');
-            document.getElementById('vought').classList.remove('active');
-            document.getElementById('electoralCandidates').classList.remove('active');
-            document.getElementById('carouselElectoral').classList.remove('active');
-        });
-
-        document.getElementById('theBoys').addEventListener('click', function () {
-            document.getElementById('carouselTheBoys').classList.remove('hidden');
-            document.getElementById('carouselTheSeven').classList.add('hidden');
-            document.getElementById('carouselVought').classList.add('hidden');
-            document.getElementById('carouselElectoral').classList.add('hidden');
-
-            document.getElementById('theBoys').classList.add('active');
-            document.getElementById('theSeven').classList.remove('active');
-            document.getElementById('vought').classList.remove('active');
-            document.getElementById('electoralCandidates').classList.remove('active');
-            document.getElementById('carouselElectoral').classList.remove('active');
-        });
-
-        document.getElementById('vought').addEventListener('click', function () {
-            document.getElementById('carouselVought').classList.remove('hidden');
-            document.getElementById('carouselTheBoys').classList.add('hidden');
-            document.getElementById('carouselTheSeven').classList.add('hidden');
-            document.getElementById('carouselElectoral').classList.add('hidden');
-
-            document.getElementById('vought').classList.add('active');
-            document.getElementById('theBoys').classList.remove('active');
-            document.getElementById('theSeven').classList.remove('active');
-            document.getElementById('electoralCandidates').classList.remove('active');
-            document.getElementById('carouselElectoral').classList.remove('active');
-        });
-
-        document.getElementById('electoralCandidates').addEventListener('click', function () {
-            document.getElementById('carouselElectoral').classList.remove('hidden');
-            document.getElementById('carouselTheBoys').classList.add('hidden');
-            document.getElementById('carouselTheSeven').classList.add('hidden');
-            document.getElementById('carouselVought').classList.add('hidden');
-
-            document.getElementById('electoralCandidates').classList.add('active');
-            document.getElementById('theBoys').classList.remove('active');
-            document.getElementById('theSeven').classList.remove('active');
-            document.getElementById('vought').classList.remove('active');
-        });
-    </script>
-    <script type="text/javascript">
-        function myFunction() {
-            var x = document.getElementById("menu_bar");
-            if (x.className === "") {
-                x.className += " responsive";
-            } else {
-                x.className = "";
-            }
-        };
-    </script>
-
+    <script src="js/script.js"></script>
     <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 
