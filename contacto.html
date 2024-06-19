@@ -11,7 +11,7 @@
     <script src="js/script.js"></script>
   </head>
   <body class="body_contacto">
-    <header>
+    <header class="header_contacto ">
       <div>
         <a href="index.html"><img src="images/web_logo.png" alt="Logo" /></a>
       </div>
@@ -23,14 +23,14 @@
           <li><a href="index.html">Inicio</a></li>
           <li><a href="personajes.html">Personajes</a></li>
           <li><a href="galeria.html">Galería</a></li>
-          <li><a href="resenas.html">Reseñas</a></li>
+          <li><a href="reviews.html">Reseñas</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
-
+    <section>
     <section class="secundario_contacto">
-      <article class="Contacto">
+      <article class="contacto">
         <form action="#" method="post">
           <div class="formulario">
             <div class="input">
@@ -64,16 +64,6 @@
             </div>
 
             <div class="input">
-              <label for="Telefono">Celular:</label>
-              <input
-                type="tel"
-                name="Telefono"
-                placeholder="Ingrese su Celular..."
-                required
-              />
-            </div>
-
-            <div class="input">
               <label for="reseña">Reseña:</label>
               <textarea
                 rows="3"
@@ -88,18 +78,16 @@
         </form>
       </article>
     </section>
-
-    <footer></footer>
-
-    <script type="text/javascript">
+    
+  <script type="text/javascript">
       function myFunction() {
-        var x = document.getElementById("menu_bar");
-        if (x.className === "") {
-          x.className += " responsive";
-        } else {
-          x.className = "";
-        }
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+              x.className += " responsive";
+          } else {
+              x.className = "";
+          }   
       }
-    </script>
+  </script>
   </body>
 </html>
