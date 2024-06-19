@@ -117,41 +117,67 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-.galeria_personajes div img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  box-sizing: border-box;
-  padding: 0;
-  border: none;
-  margin: auto;
-  display: block;
-  min-width: 50%;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-sm-6 {
+  flex: 0 0 50%;
   max-width: 50%;
-  min-height: 50%;
-  max-height: 50%;
-  object-fit: contain;
-  object-position: bottom right;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.galeria_personajes div h2 {
+.texto {
   color: white;
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  transform: translate(-50%, -50%); 
-  width: auto;
-  height: auto;
   text-align: center;
-  padding: 0.5rem 1rem;
+  padding: 20px;
+}
+
+.card-title {
   font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 20px;
 }
-/* ---- Galeria Principal ---- */
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn-lander {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  border-radius: 20px;
+  padding: 14px 30px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px; 
+}
+
+.btn-lander:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+/* ---- Galeria Personajes ---- */
 
 /* ---- Secundario ---- */
 .secundario {
@@ -300,7 +326,6 @@ button.active {
   background-color: #fff;
   color: #000;
 }
-
 /*-----------------------------------------------------*/
 
 .carousel-inner {

@@ -21,7 +21,8 @@
 
 
 </head>
-<body">
+
+<body style="background-color: #00050d;">
 
     <header>
         <div>
@@ -39,36 +40,52 @@
         </nav>
     </header>
 
+    
+    <section>
+        <div class="row">
+            
+        </div>
+    </section>
+
     <section>
         <article class="galeria_personajes">
-            <div>
-                <img src="images/characters/the_time.png" alt="The Boys logo">
-                <div></div>
-                <div class="col-3 p-3 mb-2">
-                <a><h2>SUPERHERO OF THE YEAR</h2></a>
-                <button type="button" class="btn btn-light">Light</button>
-
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="texto">
+                        <h2 class="card-title">SUPER HEROE DEL AÑO</h2>
+                        <h3>TIME rinde homenaje a Homelander.</h3>
+                        <a href="https://www.amazon.com/salp/vought?hhf&ref_=atv_dp_exp_832_hb_4_link#/superhero-of-the-year" class="btn-lander">Ver más</a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <img src="images/characters/the_time.png" alt="The Boys logo" class="img-fluid">
                 </div>
             </div>
         </article>
-        <h1></h1>
     </section>
-    <section>
-        
 
+
+      
+
+    <section>
         <ul class="nav nav-tabs">
             <li class="nav-item">
                 <button id="theBoys" type="button" class="character_btn">The Boys</button>
             </li>
             <li class="nav-item">
-                <button id="theSeven" type="button" class="character_btn">Mostrar Villanos</button>
+                <button id="theSeven" type="button" class="character_btn">The Seven</button>
+            </li>
+            <li class="nav-item">
+                <button id="vought" type="button" class="character_btn">Vought</button>
+            </li>
+            <li class="nav-item">
+                <button id="electoralCandidates" type="button" class="character_btn">Electoral Candidates</button>
             </li>
         </ul>
 
-
         <!------------------------------------------------------------------------->
         <div id="carouselTheBoys" class="carousel carousel-dark slide" style="height: 80vh; ">
-            
+
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselTheBoys" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -155,13 +172,11 @@
                 </div>
 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTheBoys"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTheBoys" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselTheBoys"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTheBoys" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -169,7 +184,7 @@
 
         <!------------------------------------------------------------------------->
         <div id="carouselTheSeven" class="carousel carousel-dark slide hidden" style="height: 80vh;">
-            
+
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselTheSeven" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -229,12 +244,123 @@
                 </div>
 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTheSeven"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTheSeven" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTheSeven" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!------------------------------------------------------------------------->
+
+        <div id="carouselVought" class="carousel carousel-dark slide hidden" style="height: 80vh;">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselVought" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselVought" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner" style="background-image: url(../images/characters/vought.jpg); height: 80vh;">
+
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/characters/Ashley.png" class="d-block w-20 h-20" alt="Foto de Ashley"
+                        style="object-fit: cover; margin-right: auto; margin-left: auto; height: 80vh">
+                    <div>
+                        <img class="character_logo_seven" src="images/vought_logo.png" alt="The Seven logo">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-white">Ashley</h5>
+                        <p class="text-white">Originalmente publicista de Vought, Ashley escaló rápidamente en la
+                            jerarquía corporativa para convertirse en CEO de la empresa. Sin embargo, recibió su ascenso
+                            después de que Homelander asesinara a su predecesora, Madelyn Stillwell, y recomendara a
+                            Ashley para el puesto. Aterrorizada por Homelander, Ashley ha sido leal hasta el extremo.
+                            Ahora, debe navegar la traicionera cultura corporativa de Vought mientras aplaca a su jefe
+                            cada vez más peligroso.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="images/characters/Ryan.png" class="d-block w-20 h-20" alt="Foto de Ryan"
+                        style="object-fit: cover; margin-right: auto; margin-left: auto; height: 80vh">
+                    <div>
+                        <img class="character_logo_seven" src="images/v.png" alt="The Seven logo">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-white">Ryan</h5>
+                        <p class="text-white">Ryan es el hijo de Homelander y el primer Supe nacido naturalmente, con
+                            poderes que igualan a los de su padre. Después de matar accidentalmente a su madre y esposa
+                            de Butcher, Becca, Ryan fue acogido por Grace Mallory para ser criado bajo protección de la
+                            CIA. Pero tras distanciarse de Butcher, eligió ocupar su lugar al lado de su padre.</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselVought" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselVought" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!------------------------------------------------------------------------->
+
+        <div id="carouselElectoral" class="carousel carousel-dark slide hidden" style="height: 80vh;">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselElectoral" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselElectoral" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner"
+                style="background-image: url(../images/characters/candidates.jpg); height: 80vh;">
+
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/characters/Victoria Neuman.png" class="d-block w-20 h-20" alt="Foto de Ashley"
+                        style="object-fit: cover; margin-right: auto; margin-left: auto; height: 80vh">
+                    <div>
+                        <img class="character_logo_seven" src="images/gob.png" alt="The Seven logo">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-white">Victoria Neuman</h5>
+                        <p class="text-white">Victoria Neuman es una política en ascenso que fundó la Oficina Federal de
+                            Asuntos Superhumanos para responsabilizar a los Supes por sus acciones. Victoria y Hughie se
+                            hicieron amigos cercanos mientras trabajaban juntos en la OFAS durante un año... hasta que
+                            Hughie descubrió que Neuman era la misteriosa Supe que hacía explotar cabezas y fue
+                            responsable del ataque al Congreso. Ahora, está haciendo campaña para ser Vicepresidenta de
+                            los Estados Unidos, poniéndola a una sola explosión de cabeza de la Presidencia.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="images/characters/Robert Singer.png" class="d-block w-20 h-20" alt="Foto de Ryan"
+                        style="object-fit: cover; margin-right: auto; margin-left: auto; height: 80vh">
+                    <div>
+                        <img class="character_logo_seven" src="images/gob.png" alt="The Seven logo">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-white">Robert Singer</h5>
+                        <p class="text-white">Anteriormente el curtido Secretario de Defensa con rencor hacia Vought,
+                            "Dakota Bob" Singer recientemente anunció su candidatura para Presidente de los Estados
+                            Unidos. Pero al seleccionar a Victoria Neuman como su compañera de fórmula, sin saberlo,
+                            puso en peligro mortal tanto a sí mismo como al país.</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselElectoral"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselTheSeven"
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselElectoral"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -243,51 +369,77 @@
 
         <!------------------------------------------------------------------------->
     </section>
-    <!--
-    <script>
-        document.getElementById('theSeven').addEventListener('click', function() {
-            document.getElementById('carouselTheSeven').classList.remove('hidden');
-            document.getElementById('carouselTheBoys').classList.add('hidden');
-        });
+    
 
-        document.getElementById('theBoys').addEventListener('click', function() {
-            document.getElementById('carouselTheBoys').classList.remove('hidden');
-            document.getElementById('carouselTheSeven').classList.add('hidden');
-        });
-    </script>
-    -->
-
-    <footer style="background-image: url(../images/b.jpg); height: 20vh;">
+    <footer style="background-image: url(../images/b.jpg); height: 20vh; margin-top: 5vh;">
         <a href="https://www.facebook.com/TheBoysTV/?locale=es_LA" target="_blank">
-          <img src="images/redes/facebook.png" alt="Facebook">
+            <img src="images/redes/facebook.png" alt="Facebook">
         </a>
         <a href="https://x.com/TheBoysTV" target="_blank">
-          <img src="images/redes/twitter.png" alt="Twitter">
+            <img src="images/redes/twitter.png" alt="Twitter">
         </a>
         <a href="https://www.youtube.com/watch?v=8-PTZXcmdOA" target="_blank">
-          <img src="images/redes/youtube.png" alt="Youtube">
+            <img src="images/redes/youtube.png" alt="Youtube">
         </a>
         <a href="https://www.instagram.com/theboystv/?hl=es" target="_blank">
-          <img src="images/redes/instagram.png" alt="Instagram">
+            <img src="images/redes/instagram.png" alt="Instagram">
         </a>
         <a href="https://www.amazon.com/dp/B09WV8HF7Q/" target="_blank">
             <img src="images/redes/amazon.png" alt="Amazon Prime">
         </a>
     </footer>
 
+
     <script>
-        document.getElementById('theSeven').addEventListener('click', function() {
+        document.getElementById('theSeven').addEventListener('click', function () {
             document.getElementById('carouselTheSeven').classList.remove('hidden');
             document.getElementById('carouselTheBoys').classList.add('hidden');
+            document.getElementById('carouselVought').classList.add('hidden');
+            document.getElementById('carouselElectoral').classList.add('hidden');
+
             document.getElementById('theSeven').classList.add('active');
             document.getElementById('theBoys').classList.remove('active');
+            document.getElementById('vought').classList.remove('active');
+            document.getElementById('electoralCandidates').classList.remove('active');
+            document.getElementById('carouselElectoral').classList.remove('active');
         });
 
-        document.getElementById('theBoys').addEventListener('click', function() {
+        document.getElementById('theBoys').addEventListener('click', function () {
             document.getElementById('carouselTheBoys').classList.remove('hidden');
             document.getElementById('carouselTheSeven').classList.add('hidden');
+            document.getElementById('carouselVought').classList.add('hidden');
+            document.getElementById('carouselElectoral').classList.add('hidden');
+
             document.getElementById('theBoys').classList.add('active');
             document.getElementById('theSeven').classList.remove('active');
+            document.getElementById('vought').classList.remove('active');
+            document.getElementById('electoralCandidates').classList.remove('active');
+            document.getElementById('carouselElectoral').classList.remove('active');
+        });
+
+        document.getElementById('vought').addEventListener('click', function () {
+            document.getElementById('carouselVought').classList.remove('hidden');
+            document.getElementById('carouselTheBoys').classList.add('hidden');
+            document.getElementById('carouselTheSeven').classList.add('hidden');
+            document.getElementById('carouselElectoral').classList.add('hidden');
+
+            document.getElementById('vought').classList.add('active');
+            document.getElementById('theBoys').classList.remove('active');
+            document.getElementById('theSeven').classList.remove('active');
+            document.getElementById('electoralCandidates').classList.remove('active');
+            document.getElementById('carouselElectoral').classList.remove('active');
+        });
+
+        document.getElementById('electoralCandidates').addEventListener('click', function () {
+            document.getElementById('carouselElectoral').classList.remove('hidden');
+            document.getElementById('carouselTheBoys').classList.add('hidden');
+            document.getElementById('carouselTheSeven').classList.add('hidden');
+            document.getElementById('carouselVought').classList.add('hidden');
+
+            document.getElementById('electoralCandidates').classList.add('active');
+            document.getElementById('theBoys').classList.remove('active');
+            document.getElementById('theSeven').classList.remove('active');
+            document.getElementById('vought').classList.remove('active');
         });
     </script>
     <script type="text/javascript">
@@ -302,6 +454,6 @@
     </script>
 
     <script src="js/lightbox-plus-jquery.min.js"></script>
-    </body>
+</body>
 
 </html>
