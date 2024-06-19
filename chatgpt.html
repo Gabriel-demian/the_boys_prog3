@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocultar div</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <button id="theBoys" class="character_btn" type="button" class="btn btn-danger">The Boys</button>
+        </li>
+        <li class="nav-item">
+            <button id="theSeven" class="character_btn" type="button" class="btn btn-danger">Mostrar Villanos</button>
+        </li>
+    </ul>
+
+    <div id="carouselTheBoys" style="color: white;">
+        The Boys
+    </div>
+    <div id="carouselTheSeven" class="hidden" style="color: white;">
+        The Seven
+    </div>
+
+    <script>
+        document.getElementById('theSeven').addEventListener('click', function() {
+            document.getElementById('carouselTheSeven').classList.remove('hidden');
+            document.getElementById('carouselTheBoys').classList.add('hidden');
+        });
+
+        document.getElementById('theBoys').addEventListener('click', function() {
+            document.getElementById('carouselTheBoys').classList.remove('hidden');
+            document.getElementById('carouselTheSeven').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
+
