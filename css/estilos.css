@@ -225,8 +225,8 @@ article.secundario div {
 }
 
 article.secundario h4 {
-  color: #ff0000; /* Color rojo */
-  text-shadow: 0 0 10px #ff0000; /* Sombra de texto roja */
+  color: #ff0000; 
+  text-shadow: 0 0 10px #ff0000; 
   margin-top: 0;
   font-size: 1.5rem;
 }
@@ -251,6 +251,9 @@ h1 {
 
 /* ---- Footer ---- */
 footer {
+  background-image: url(../images/b.jpg);
+  height: 20vh;
+  margin-top: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
