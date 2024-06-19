@@ -397,29 +397,36 @@ button.active {
 /*-----------------------------------------------------*/
 
 .carousel-inner {
-  width: 50vh;
+  height: 80vh;
 }
 
 .carousel-carouselTheBoys {
   background-image: url(../images/characters/boys.jpg); 
   height: 80vh;
+  background-size: cover;
+  background-position: center;
 }
 
 .carousel-carouselTheSeven {
   background-image: url(../images/characters/seven.jpg); 
   height: 80vh;
+  background-size: cover;
+  background-position: center;
 }
 
 .carousel-carouselVought {
   background-image: url(../images/characters/vought.jpg); 
   height: 80vh;
+  background-size: cover;
+  background-position: center;
 }
 
 .carousel-carouselElectoral {
-  background-image: url(../images/characters/candidates.jpg); 
+  background-image: url(../images/characters/candidates.jpg);
   height: 80vh;
+  background-size: cover;
+  background-position: center;
 }
-
 
 .carousel-item img {
   object-fit: cover;
