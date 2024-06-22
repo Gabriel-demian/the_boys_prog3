@@ -114,6 +114,13 @@ section {
   position: relative;
 }
 
+.heroes {
+  object-fit: cover; 
+  margin-right: auto; 
+  margin-left: auto; 
+  height: 80vh;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -214,6 +221,8 @@ h1 {
 
 footer {
   background-image: url(../images/b.jpg);
+  background-position: right center;
+  background-repeat: no-repeat;
   height: 20vh;
   margin-top: 5vh;
   display: flex;
@@ -506,6 +515,9 @@ button.active {
   }
 
   footer {
+    background-image: url(../images/b.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
     height: 80px;
     justify-content: space-evenly;
   }
@@ -522,4 +534,5 @@ button.active {
   h4 {
     font-size: 1rem;
   }
+
 }
