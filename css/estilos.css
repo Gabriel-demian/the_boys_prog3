@@ -435,6 +435,27 @@ main {
   padding: 20px;
 }
 
+.icon,
+.hidden {
+  display: none;
+}
+
+.principal div img{
+  width: 70%;
+}
+
+.principal div h3 {
+  color: #000;
+}
+
+.character_btn:hover,
+button.active {
+  background-color: #fff;
+  color: #000;
+}
+
+
+/*********************************************************************/
 .reviews-section {
   max-width: 1200px;
   margin: 0 auto;
@@ -459,6 +480,25 @@ main {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(139, 0, 0, 0.8);
+}
+
+.review-header {
+  display: flex;
+  align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+  margin-bottom: 10px; /* Espacio entre cada review */
+}
+
+.author-image {
+  width: 40px; /* Tamaño deseado para la imagen */
+  height: 40px;
+  border-radius: 50%; /* Para hacerla circular */
+  margin-right: 10px; /* Espacio entre la imagen y el título */
 }
 
 .review-header h2 {
@@ -468,7 +508,7 @@ main {
 
 .review-header .review-date {
   color: #888;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-top: 5px;
 }
 
@@ -477,26 +517,7 @@ main {
   color: #ccc;
   margin: 10px 0;
 }
-
-
-.icon,
-.hidden {
-  display: none;
-}
-
-.principal div img{
-  width: 70%;
-}
-
-.principal div h3 {
-  color: #000;
-}
-
-.character_btn:hover,
-button.active {
-  background-color: #fff;
-  color: #000;
-}
+/*********************************************************************/
 
 
 
