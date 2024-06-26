@@ -1,87 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.6.2/dist/fancybox.css"/>
-    <link rel="stylesheet" href="css/estilos.css" />
-    <script src="js/script.js"></script>
-    <link rel="icon" href="images/fav.ico" type="image/x-icon">
-    <title>Da Boys - Contacto</title>
-  </head>
-  <body class="body_contacto">
-    <header class="header_contacto ">
-      <div>
-        <a href="index.html"><img src="images/web_logo.png" alt="Logo" /></a>
-      </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()"
-        ><i class="fa fa-bars"></i
-      ></a>
-      <span style="visibility: hidden;"><h1>Contacto</h1></span>
-      <nav id="menu_bar">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="personajes.html">Personajes</a></li>
-          <li><a href="galeria.html">Galería</a></li>
-          <li><a href="reviews.html">Reseñas</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section>
-    <section class="secundario_contacto">
-      <article class="contacto">
-        <form action="#" method="post">
-          <div class="formulario">
-            <div class="input">
-              <label for="nombres">Nombre/s</label>
-              <input
-                type="text"
-                name="nombres"
-                placeholder="Ingrese su nombre..."
-                required
-              />
-            </div>
-
-            <div class="input">
-              <label for="Apellido">Apellido/s</label>
-              <input
-                type="text"
-                name="Apellido"
-                placeholder="Ingrese su Apellido..."
-                required
-              />
-            </div>
-
-            <div class="input">
-              <label for="Email">Email</label>
-              <input
-                type="email"
-                name="Email"
-                placeholder="Ingrese su Email..."
-                required
-              />
-            </div>
-
-            <div class="input">
-              <label for="Comentarios">Comentarios:</label>
-              <textarea
-                rows="3"
-                cols="3"
-                name="reseña"
-                placeholder="Ingrese sus comentarios..."
-              ></textarea>
-            </div>
-
-            <button type="submit" class="submit-btn">Enviar</button>
-          </div>
-        </form>
-      </article>
-    </section>
-
-    <script src="js/script.js"></script>
-  </body>
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.6.2/dist/fancybox.css" rel="stylesheet">
+	<link href="css/estilos.css" rel="stylesheet">
+	<script src="js/script.js">
+	</script>
+	<link href="images/fav.ico" rel="icon" type="image/x-icon">
+	<title>Da Boys - Contacto</title>
+</head>
+<body class="body_contacto">
+	<header class="header_contacto">
+		<div>
+			<a href="index.html"><img alt="Logo" src="images/web_logo.png"></a>
+		</div><a class="icon" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a> <span style="visibility: hidden;"></span>
+		<h1><span style="visibility: hidden;">Contacto</span></h1>
+		<nav id="menu_bar">
+			<ul>
+				<li>
+					<a href="index.html">Inicio</a>
+				</li>
+				<li>
+					<a href="personajes.html">Personajes</a>
+				</li>
+				<li>
+					<a href="galeria.html">Galería</a>
+				</li>
+				<li>
+					<a href="reviews.html">Reseñas</a>
+				</li>
+				<li>
+					<a href="contacto.html">Contacto</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<section class="secundario_contacto">
+			<article class="contacto">
+				<form action="#" method="post">
+					<div class="formulario">
+						<div class="input">
+							<label for="nombres">Nombre/s</label> <input name="nombres" placeholder="Ingrese su nombre..." required="" type="text">
+						</div>
+						<div class="input">
+							<label for="Apellido">Apellido/s</label> <input name="Apellido" placeholder="Ingrese su Apellido..." required="" type="text">
+						</div>
+						<div class="input">
+							<label for="Email">Email</label> <input name="Email" placeholder="Ingrese su Email..." required="" type="email">
+						</div>
+						<div class="input">
+							<label for="Comentarios">Comentarios:</label> 
+							<textarea cols="3" name="reseña" placeholder="Ingrese sus comentarios..." rows="3"></textarea>
+						</div><button class="submit-btn" type="submit">Enviar</button>
+					</div>
+				</form>
+			</article>
+		</section>
+		<script src="js/script.js">
+		</script> 
+	</section>
+</body>
 </html>
