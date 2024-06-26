@@ -6,16 +6,7 @@
 
 body {
   font-family: Rubik, sans-serif;
-  background-color: #000;
-}
-
-header_bkp {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #212121;
-  border-bottom: 2px solid #8b0000;
-  padding: 2%;
+  background-color: #00050d;
 }
 
 header {
@@ -25,7 +16,6 @@ header {
   background-color: #212121;
   border-bottom: 2px solid #8b0000;
   padding: 2%;
-
   top: 0;
   padding: 1% 2%;
 }
@@ -100,7 +90,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
 }
 
 .galeria_principal {
@@ -112,7 +101,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
 }
 
 .galeria_personajes {
@@ -125,6 +113,7 @@ section {
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden; 
 }
 
 .heroes {
@@ -139,6 +128,9 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .col-sm-6 {
