@@ -175,7 +175,7 @@ h3 {
 
 .video-container {
   position: relative;
-  padding-bottom: 43.75%; /* Cambiado para hacer el video más bajo */
+  padding-bottom: 43.75%; 
   height: 0;
   overflow: hidden;
   max-width: 100%;
@@ -202,11 +202,11 @@ h3 {
   display: block;
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease; /* Transición para el efecto de escala */
+  transition: transform 0.3s ease;
 }
 
 .secundario a:hover {
-  transform: scale(1.1); /* Agranda el contenedor <a> al pasar el cursor */
+  transform: scale(1.1);
 }
 
 .secundario a img {
@@ -222,25 +222,25 @@ h3 {
   left: 0;
   right: 0;
   bottom: 0;
-  border: 2px dashed transparent; /* Borde punteado inicialmente transparente */
-  border-radius: 5%; /* Borde redondeado del 5% */
-  pointer-events: none; /* Evita que el borde interfiera con los eventos de ratón */
+  border: 2px dashed transparent;
+  border-radius: 5%;
+  pointer-events: none;
   transition: border-color 0.3s ease;
 }
 
 .secundario a::before {
-  border-color: red; /* Borde punteado rojo */
-  opacity: 0; /* Inicialmente transparente */
+  border-color: red;
+  opacity: 0;
 }
 
 .secundario a::after {
-  border-color: blue; /* Borde punteado azul */
-  opacity: 0; /* Inicialmente transparente */
+  border-color: blue;
+  opacity: 0; 
 }
 
 .secundario a:hover::before,
 .secundario a:hover::after {
-  opacity: 1; /* Hace visible el borde al pasar el cursor */
+  opacity: 1;
 }
 
 
@@ -520,15 +520,15 @@ button.active {
 
 .review-header {
   display: flex;
-  align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
-  margin-bottom: 10px; /* Espacio entre cada review */
+  align-items: flex-start;
+  margin-bottom: 10px;
 }
 
 .author-image {
-  width: 40px; /* Tamaño deseado para la imagen */
+  width: 40px;
   height: 40px;
-  border-radius: 50%; /* Para hacerla circular */
-  margin-right: 10px; /* Espacio entre la imagen y el título */
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .review-header h2 {
@@ -573,7 +573,7 @@ button.active {
   .galeria_personajes {
     height: auto;
     padding: 10px;
-    flex-direction: column; /* Coloca los elementos en columna */
+    flex-direction: column;
   }
 
   .col-sm-6 {
@@ -582,11 +582,11 @@ button.active {
   }
 
   .col-sm-6:first-child {
-    order: 2; /* Coloca el texto después de la imagen */
+    order: 2;
   }
 
   .col-sm-6:last-child {
-    order: 1; /* Coloca la imagen antes del texto */
+    order: 1;
   }
 
   .img-fluid {
@@ -702,11 +702,11 @@ button.active {
   }
   
   footer a {
-    margin: 5px; /* Reducir el margen para dispositivos móviles */
+    margin: 5px;
   }
   
   footer a img {
-    max-width: 2rem; /* Reducir el tamaño de los logos para dispositivos móviles */
+    max-width: 2rem;
   }
 
 }
