@@ -198,23 +198,52 @@ h3 {
   grid-gap: 2%;
 }
 
-article.secundario div {
-  text-align: center;
+.secundario a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease; /* Transición para el efecto de escala */
+}
+
+.secundario a:hover {
+  transform: scale(1.1); /* Agranda el contenedor <a> al pasar el cursor */
 }
 
 .secundario a img {
   width: 100%;
-  margin-bottom: 5px;
   border-radius: 5%;
-  border: 5px solid red;
 }
 
-article.secundario h4 {
-  color: red;
-  text-shadow: 0 0 10px red;
-  margin-top: 0;
-  font-size: 1.5rem;
+.secundario a::before,
+.secundario a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px dashed transparent; /* Borde punteado inicialmente transparente */
+  border-radius: 5%; /* Borde redondeado del 5% */
+  pointer-events: none; /* Evita que el borde interfiera con los eventos de ratón */
+  transition: border-color 0.3s ease;
 }
+
+.secundario a::before {
+  border-color: red; /* Borde punteado rojo */
+  opacity: 0; /* Inicialmente transparente */
+}
+
+.secundario a::after {
+  border-color: blue; /* Borde punteado azul */
+  opacity: 0; /* Inicialmente transparente */
+}
+
+.secundario a:hover::before,
+.secundario a:hover::after {
+  opacity: 1; /* Hace visible el borde al pasar el cursor */
+}
+
+
 /********************************************************************************************/
 
 h4 {
@@ -576,6 +605,10 @@ button.active {
 
   footer a img {
     max-width: 2rem;
+  }
+
+  .secundario {
+    grid-template-columns: 1fr;
   }
 }
 
