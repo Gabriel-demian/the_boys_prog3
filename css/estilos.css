@@ -500,8 +500,8 @@ button.active {
   }
 
   .galeria_personajes {
-    height: auto; 
-    padding: 10px; 
+    height: auto;
+    padding: 10px;
     flex-direction: column; /* Coloca los elementos en columna */
   }
 
@@ -525,13 +525,12 @@ button.active {
   }
 
   .card-title {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
-
-  header{
+  header {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -540,48 +539,57 @@ button.active {
     top: 0;
     z-index: 1;
   }
-  
-  header div, header a {
+
+  header div,
+  header a {
     flex: 1 0 50%;
   }
 
   header nav {
     flex-basis: 100%;
   }
+
   .icon {
     display: block;
     padding-right: 0.6rem;
     text-align: right;
-    
   }
+
   nav ul {
     display: none;
   }
+
   nav.responsive ul {
     display: block;
   }
+
   nav.responsive ul li {
     display: block;
     text-align: center;
     padding: 0.5rem;
   }
+
   nav.responsive ul li a {
     padding-right: 0;
   }
+
   .formulario {
     width: 100%;
     padding: 15px;
   }
+
   section {
     max-width: 480px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
+
   .principal {
     height: 250px;
     padding: 10%;
   }
+
   .secundario {
     margin-top: 1%;
     display: block;
@@ -617,5 +625,4 @@ button.active {
   h4 {
     font-size: 1rem;
   }
-
 }
