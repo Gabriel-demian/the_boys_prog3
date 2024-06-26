@@ -114,6 +114,7 @@ section {
   align-items: center;
   position: relative;
   overflow: hidden; 
+  margin-bottom: 20px;
 }
 
 .heroes {
@@ -215,6 +216,12 @@ h4 {
 h1 {
   text-align: center;
   margin-top: 1.5em;
+}
+
+.h1_hidden {
+  text-align: center;
+  margin-top: 0em;
+  visibility: hidden;
 }
 
 .trailer {
@@ -490,6 +497,35 @@ button.active {
 
   .principal h3 {
     font-size: 1.2em;
+  }
+
+  .galeria_personajes {
+    height: auto; 
+    padding: 10px; 
+    flex-direction: column; /* Coloca los elementos en columna */
+  }
+
+  .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .col-sm-6:first-child {
+    order: 2; /* Coloca el texto después de la imagen */
+  }
+
+  .col-sm-6:last-child {
+    order: 1; /* Coloca la imagen antes del texto */
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1.5rem; 
   }
 }
 
