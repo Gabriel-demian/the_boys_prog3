@@ -233,11 +233,13 @@ h1 {
 
 footer {
   background-image: url(../images/b.jpg);
-  background-position: right center;
+  background-position: top right;
   background-repeat: no-repeat;
-  height: 20vh;
+  min-height: 20vh; 
+  height: auto;
   margin-top: 5vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -247,7 +249,7 @@ footer {
 }
 
 footer a {
-  margin-right: .5%;
+  margin: 0 10px;
 }
 
 footer a img {
@@ -255,6 +257,20 @@ footer a img {
   width: 100%;
   height: auto;
 }
+
+footer p {
+  color: #888;
+  margin: 0;
+}
+
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
 
 .body_contacto {
   background-image: url(../images/wallpaper.jpg);
@@ -454,10 +470,6 @@ main {
   margin: 10px 0;
 }
 
-footer p {
-  color: #888;
-  margin: 0;
-}
 
 .icon,
 .hidden {
@@ -479,6 +491,8 @@ button.active {
   background-color: #fff;
   color: #000;
 }
+
+
 
 @media (max-width: 768px) {
   .principal {
@@ -526,6 +540,14 @@ button.active {
 
   .card-title {
     font-size: 1.5rem;
+  }
+
+  footer {
+    background-position: right center;
+  }
+
+  footer a img {
+    max-width: 2rem;
   }
 }
 
@@ -605,18 +627,6 @@ button.active {
     margin-bottom: 1rem;
   }
 
-  footer {
-    background-image: url(../images/b.jpg);
-    background-position: left center;
-    background-repeat: no-repeat;
-    height: 80px;
-    justify-content: space-evenly;
-  }
-
-  footer a img {
-    max-width: 3rem;
-  }
-
   .character_logo_boys {
     width: 50%;
   }
@@ -625,4 +635,17 @@ button.active {
   h4 {
     font-size: 1rem;
   }
+
+  footer {
+    padding: 10px;
+  }
+  
+  footer a {
+    margin: 5px; /* Reducir el margen para dispositivos móviles */
+  }
+  
+  footer a img {
+    max-width: 2rem; /* Reducir el tamaño de los logos para dispositivos móviles */
+  }
+
 }
