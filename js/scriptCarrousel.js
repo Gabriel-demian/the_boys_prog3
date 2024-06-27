@@ -1,4 +1,4 @@
-const carouselData = [
+const carouselBoysData = [
     {
         src: "images/characters/Billy_Butcher.png",
         alt: "Foto de Billy Butcher",
@@ -32,13 +32,79 @@ const carouselData = [
         interval: 10000
     }
 ];
+
+const carouselSevenData = [
+    {
+      src: "images/characters/Homelander.png",
+      alt: "Foto de Homelander",
+      logo: "images/seven_logo.png",
+      title: "Homelander",
+      description: "El Supe más poderoso de la Tierra y el líder de Los Siete, el principal equipo de superhéroes del mundo, Homelander posee una gama de poderes que incluye superfuerza, vuelo y la capacidad de disparar rayos láser desde sus ojos. Pero detrás de la máscara heroica se encuentra un hombre profundamente perturbado e inestable que se considera un dios, superior a los humanos y a todos los demás Super.",
+      interval: 10000
+    },
+    {
+      src: "images/characters/Firecracker.png",
+      alt: "Foto de Firecracker",
+      logo: "images/seven_logo.png",
+      title: "Firecracker",
+      description: "También se une a Los Siete Firecracker, una Supe de Daytona Beach, Florida, con una venganza personal contra Starlight.",
+      interval: 10000
+    },
+    {
+      src: "images/characters/Black_Noir.png",
+      alt: "Foto de Black Noir",
+      logo: "images/seven_logo.png",
+      title: "Black Noir",
+      description: "Un maestro del sigilo, Black Noir es un Supe con una larga historia en Vought. Anteriormente miembro del equipo de superhéroes de Soldier Boy, Payback, desde entonces se ha unido a Los Siete y se ha convertido en uno de los confidentes más cercanos de Homelander.",
+      interval: 10000
+    }
+  ];
+  
+  const carouselVoughtData = [
+    {
+      src: "images/characters/Ashley.png",
+      alt: "Foto de Ashley",
+      logo: "images/vought_logo.png",
+      title: "Ashley",
+      description: "Originalmente publicista de Vought, Ashley escaló rápidamente en la jerarquía corporativa para convertirse en CEO de la empresa. Sin embargo, recibió su ascenso después de que Homelander asesinara a su predecesora, Madelyn Stillwell, y recomendara a Ashley para el puesto. Aterrorizada por Homelander, Ashley ha sido leal hasta el extremo.",
+      interval: 10000
+    },
+    {
+      src: "images/characters/Ryan.png",
+      alt: "Foto de Ryan",
+      logo: "images/vought_logo.png",
+      title: "Ryan",
+      description: "Ryan es el hijo de Homelander y el primer Supe nacido naturalmente, con poderes que igualan a los de su padre. Después de matar accidentalmente a su madre y esposa de Butcher, Becca, Ryan fue acogido por Grace Mallory para ser criado bajo protección de la CIA. Pero tras distanciarse de Butcher, eligió ocupar su lugar al lado de su padre.",
+      interval: 10000
+    }
+  ];
+
+  const carouselElectoralData = [
+    {
+      src: "images/characters/Victoria_Neuman.png",
+      alt: "Foto de Victoria Neuman",
+      logo: "images/gob.png",
+      title: "Victoria Neuman",
+      description: "Victoria Neuman es una política en ascenso que fundó la Oficina Federal de Asuntos Superhumanos para responsabilizar a los Super por sus acciones. Victoria y Hughie se hicieron amigos cercanos mientras trabajaban juntos en la OFAS durante un año... hasta que Hughie descubrió que Neuman era la misteriosa Super que hacía explotar cabezas y fue responsable del ataque al Congreso.",
+      interval: 10000
+    },
+    {
+      src: "images/characters/Robert_Singer.png",
+      alt: "Foto de Robert Singer",
+      logo: "images/gob.png",
+      title: "Robert Singer",
+      description: "Anteriormente el curtido Secretario de Defensa con rencor hacia Vought, 'Dakota Bob' Singer recientemente anunció su candidatura para Presidente de los Estados Unidos. Pero al seleccionar a Victoria Neuman como su compañera de fórmula, sin saberlo, puso en peligro mortal tanto a sí mismo como al país.",
+      interval: 10000
+    }
+  ];
+  
   
 
 document.addEventListener("DOMContentLoaded", function() {
     const carouselInner = document.querySelector('.carousel-inner');
     const carouselIndicators = document.querySelector('.carousel-indicators');
 
-    carouselData.forEach((item, index) => {
+    carouselBoysData.forEach((item, index) => {
       // Crear indicador
       const indicator = document.createElement('button');
       indicator.type = 'button';
@@ -88,5 +154,176 @@ document.addEventListener("DOMContentLoaded", function() {
       carouselItem.appendChild(captionDiv);
 
       carouselInner.appendChild(carouselItem);
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const carouselSevenInner = document.querySelector('.carousel-carouselTheSeven');
+    const carouselSevenIndicators = document.querySelector('#carouselTheSeven .carousel-indicators');
+
+    carouselSevenData.forEach((item, index) => {
+      // Crear indicador
+      const indicator = document.createElement('button');
+      indicator.type = 'button';
+      indicator.dataset.bsTarget = '#carouselTheSeven';
+      indicator.dataset.bsSlideTo = index;
+      indicator.ariaLabel = `Slide ${index + 1}`;
+      if (index === 0) {
+        indicator.classList.add('active');
+        indicator.ariaCurrent = 'true';
+      }
+      carouselSevenIndicators.appendChild(indicator);
+
+      // Crear item del carrusel
+      const carouselItem = document.createElement('div');
+      carouselItem.classList.add('carousel-item');
+      if (index === 0) carouselItem.classList.add('active');
+      carouselItem.dataset.bsInterval = item.interval;
+
+      const img = document.createElement('img');
+      img.src = item.src;
+      img.alt = item.alt;
+      img.classList.add('d-block', 'w-20', 'h-20', 'heroes');
+
+      const logoDiv = document.createElement('div');
+      const logo = document.createElement('img');
+      logo.src = item.logo;
+      logo.alt = 'The Seven logo';
+      logo.classList.add('character_logo_seven');
+      logoDiv.appendChild(logo);
+
+      const captionDiv = document.createElement('div');
+      captionDiv.classList.add('carousel-caption', 'd-none', 'd-md-block');
+
+      const title = document.createElement('h5');
+      title.classList.add('text-white');
+      title.textContent = item.title;
+
+      const description = document.createElement('p');
+      description.classList.add('text-white');
+      description.textContent = item.description;
+
+      captionDiv.appendChild(title);
+      captionDiv.appendChild(description);
+
+      carouselItem.appendChild(img);
+      carouselItem.appendChild(logoDiv);
+      carouselItem.appendChild(captionDiv);
+
+      carouselSevenInner.appendChild(carouselItem);
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const carouselVoughtInner = document.querySelector('.carousel-carouselVought');
+    const carouselVoughtIndicators = document.querySelector('#carouselVought .carousel-indicators');
+
+    carouselVoughtData.forEach((item, index) => {
+      // Crear indicador
+      const indicator = document.createElement('button');
+      indicator.type = 'button';
+      indicator.dataset.bsTarget = '#carouselVought';
+      indicator.dataset.bsSlideTo = index;
+      indicator.ariaLabel = `Slide ${index + 1}`;
+      if (index === 0) {
+        indicator.classList.add('active');
+        indicator.ariaCurrent = 'true';
+      }
+      carouselVoughtIndicators.appendChild(indicator);
+
+      // Crear item del carrusel
+      const carouselItem = document.createElement('div');
+      carouselItem.classList.add('carousel-item');
+      if (index === 0) carouselItem.classList.add('active');
+      carouselItem.dataset.bsInterval = item.interval;
+
+      const img = document.createElement('img');
+      img.src = item.src;
+      img.alt = item.alt;
+      img.classList.add('d-block', 'w-20', 'h-20', 'heroes');
+
+      const logoDiv = document.createElement('div');
+      const logo = document.createElement('img');
+      logo.src = item.logo;
+      logo.alt = 'The Seven logo';
+      logo.classList.add('character_logo_seven');
+      logoDiv.appendChild(logo);
+
+      const captionDiv = document.createElement('div');
+      captionDiv.classList.add('carousel-caption', 'd-none', 'd-md-block');
+
+      const title = document.createElement('h5');
+      title.classList.add('text-white');
+      title.textContent = item.title;
+
+      const description = document.createElement('p');
+      description.classList.add('text-white');
+      description.textContent = item.description;
+
+      captionDiv.appendChild(title);
+      captionDiv.appendChild(description);
+
+      carouselItem.appendChild(img);
+      carouselItem.appendChild(logoDiv);
+      carouselItem.appendChild(captionDiv);
+
+      carouselVoughtInner.appendChild(carouselItem);
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const carouselElectoralInner = document.querySelector('.carousel-carouselElectoral');
+    const carouselElectoralIndicators = document.querySelector('#carouselElectoral .carousel-indicators');
+
+    carouselElectoralData.forEach((item, index) => {
+      // Crear indicador
+      const indicator = document.createElement('button');
+      indicator.type = 'button';
+      indicator.dataset.bsTarget = '#carouselElectoral';
+      indicator.dataset.bsSlideTo = index;
+      indicator.ariaLabel = `Slide ${index + 1}`;
+      if (index === 0) {
+        indicator.classList.add('active');
+        indicator.ariaCurrent = 'true';
+      }
+      carouselElectoralIndicators.appendChild(indicator);
+
+      // Crear item del carrusel
+      const carouselItem = document.createElement('div');
+      carouselItem.classList.add('carousel-item');
+      if (index === 0) carouselItem.classList.add('active');
+      carouselItem.dataset.bsInterval = item.interval;
+
+      const img = document.createElement('img');
+      img.src = item.src;
+      img.alt = item.alt;
+      img.classList.add('d-block', 'w-20', 'h-20', 'heroes');
+
+      const logoDiv = document.createElement('div');
+      const logo = document.createElement('img');
+      logo.src = item.logo;
+      logo.alt = 'The Seven logo';
+      logo.classList.add('character_logo_seven');
+      logoDiv.appendChild(logo);
+
+      const captionDiv = document.createElement('div');
+      captionDiv.classList.add('carousel-caption', 'd-none', 'd-md-block');
+
+      const title = document.createElement('h5');
+      title.classList.add('text-white');
+      title.textContent = item.title;
+
+      const description = document.createElement('p');
+      description.classList.add('text-white');
+      description.textContent = item.description;
+
+      captionDiv.appendChild(title);
+      captionDiv.appendChild(description);
+
+      carouselItem.appendChild(img);
+      carouselItem.appendChild(logoDiv);
+      carouselItem.appendChild(captionDiv);
+
+      carouselElectoralInner.appendChild(carouselItem);
     });
   });
