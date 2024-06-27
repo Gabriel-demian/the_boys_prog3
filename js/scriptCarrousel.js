@@ -98,232 +98,68 @@ const carouselSevenData = [
     }
   ];
   
-  
-
-document.addEventListener("DOMContentLoaded", function() {
-    const carouselInner = document.querySelector('.carousel-inner');
-    const carouselIndicators = document.querySelector('.carousel-indicators');
-
-    carouselBoysData.forEach((item, index) => {
-      // Crear indicador
-      const indicator = document.createElement('button');
-      indicator.type = 'button';
-      indicator.dataset.bsTarget = '#carouselTheBoys';
-      indicator.dataset.bsSlideTo = index;
-      indicator.ariaLabel = `Slide ${index + 1}`;
-      if (index === 0) {
-        indicator.classList.add('active');
-        indicator.ariaCurrent = 'true';
-      }
-      carouselIndicators.appendChild(indicator);
-
-      // Crear item del carrusel
-      const carouselItem = document.createElement('div');
-      carouselItem.classList.add('carousel-item');
-      if (index === 0) carouselItem.classList.add('active');
-      carouselItem.dataset.bsInterval = item.interval;
-
-      const img = document.createElement('img');
-      img.src = item.src;
-      img.alt = item.alt;
-      img.classList.add('d-block', 'w-20', 'h-20', 'heroes');
-
-      const logoDiv = document.createElement('div');
-      const logo = document.createElement('img');
-      logo.src = item.logo;
-      logo.alt = 'The Boys logo';
-      logo.classList.add('character_logo_boys');
-      logoDiv.appendChild(logo);
-
-      const captionDiv = document.createElement('div');
-      captionDiv.classList.add('carousel-caption', 'd-none', 'd-md-block');
-
-      const title = document.createElement('h5');
-      title.classList.add('text-white');
-      title.textContent = item.title;
-
-      const description = document.createElement('p');
-      description.classList.add('text-white');
-      description.textContent = item.description;
-
-      captionDiv.appendChild(title);
-      captionDiv.appendChild(description);
-
-      carouselItem.appendChild(img);
-      carouselItem.appendChild(logoDiv);
-      carouselItem.appendChild(captionDiv);
-
-      carouselInner.appendChild(carouselItem);
-    });
-  });
-
   document.addEventListener("DOMContentLoaded", function() {
-    const carouselSevenInner = document.querySelector('.carousel-carouselTheSeven');
-    const carouselSevenIndicators = document.querySelector('#carouselTheSeven .carousel-indicators');
+    const carousels = [
+        { id: 'carouselTheBoys', data: carouselBoysData, innerClass: 'carousel-inner', indicatorsQuery: '.carousel-indicators', logoClass: 'character_logo_boys' },
+        { id: 'carouselTheSeven', data: carouselSevenData, innerClass: 'carousel-carouselTheSeven', indicatorsQuery: '#carouselTheSeven .carousel-indicators', logoClass: 'character_logo_seven' },
+        { id: 'carouselVought', data: carouselVoughtData, innerClass: 'carousel-carouselVought', indicatorsQuery: '#carouselVought .carousel-indicators', logoClass: 'character_logo_seven' },
+        { id: 'carouselElectoral', data: carouselElectoralData, innerClass: 'carousel-carouselElectoral', indicatorsQuery: '#carouselElectoral .carousel-indicators', logoClass: 'character_logo_seven' }
+    ];
 
-    carouselSevenData.forEach((item, index) => {
-      // Crear indicador
-      const indicator = document.createElement('button');
-      indicator.type = 'button';
-      indicator.dataset.bsTarget = '#carouselTheSeven';
-      indicator.dataset.bsSlideTo = index;
-      indicator.ariaLabel = `Slide ${index + 1}`;
-      if (index === 0) {
-        indicator.classList.add('active');
-        indicator.ariaCurrent = 'true';
-      }
-      carouselSevenIndicators.appendChild(indicator);
+    carousels.forEach(carousel => {
+        const carouselInner = document.querySelector(`.${carousel.innerClass}`);
+        const carouselIndicators = document.querySelector(carousel.indicatorsQuery);
 
-      // Crear item del carrusel
-      const carouselItem = document.createElement('div');
-      carouselItem.classList.add('carousel-item');
-      if (index === 0) carouselItem.classList.add('active');
-      carouselItem.dataset.bsInterval = item.interval;
+        carousel.data.forEach((item, index) => {
+            // Crear indicador
+            const indicator = document.createElement('button');
+            indicator.type = 'button';
+            indicator.dataset.bsTarget = `#${carousel.id}`;
+            indicator.dataset.bsSlideTo = index;
+            indicator.ariaLabel = `Slide ${index + 1}`;
+            if (index === 0) {
+                indicator.classList.add('active');
+                indicator.ariaCurrent = 'true';
+            }
+            carouselIndicators.appendChild(indicator);
 
-      const img = document.createElement('img');
-      img.src = item.src;
-      img.alt = item.alt;
-      img.classList.add('d-block', 'w-20', 'h-20', 'heroes');
+            // Crear item del carrusel
+            const carouselItem = document.createElement('div');
+            carouselItem.classList.add('carousel-item');
+            if (index === 0) carouselItem.classList.add('active');
+            carouselItem.dataset.bsInterval = item.interval;
 
-      const logoDiv = document.createElement('div');
-      const logo = document.createElement('img');
-      logo.src = item.logo;
-      logo.alt = 'The Seven logo';
-      logo.classList.add('character_logo_seven');
-      logoDiv.appendChild(logo);
+            const img = document.createElement('img');
+            img.src = item.src;
+            img.alt = item.alt;
+            img.classList.add('d-block', 'w-20', 'h-20', 'heroes');
 
-      const captionDiv = document.createElement('div');
-      captionDiv.classList.add('carousel-caption', 'd-none', 'd-md-block');
+            const logoDiv = document.createElement('div');
+            const logo = document.createElement('img');
+            logo.src = item.logo;
+            logo.alt = 'The Seven logo';
+            logo.classList.add(carousel.logoClass);
+            logoDiv.appendChild(logo);
 
-      const title = document.createElement('h5');
-      title.classList.add('text-white');
-      title.textContent = item.title;
+            const captionDiv = document.createElement('div');
+            captionDiv.classList.add('carousel-caption', 'd-none', 'd-md-block');
 
-      const description = document.createElement('p');
-      description.classList.add('text-white');
-      description.textContent = item.description;
+            const title = document.createElement('h5');
+            title.classList.add('text-white');
+            title.textContent = item.title;
 
-      captionDiv.appendChild(title);
-      captionDiv.appendChild(description);
+            const description = document.createElement('p');
+            description.classList.add('text-white');
+            description.textContent = item.description;
 
-      carouselItem.appendChild(img);
-      carouselItem.appendChild(logoDiv);
-      carouselItem.appendChild(captionDiv);
+            captionDiv.appendChild(title);
+            captionDiv.appendChild(description);
 
-      carouselSevenInner.appendChild(carouselItem);
+            carouselItem.appendChild(img);
+            carouselItem.appendChild(logoDiv);
+            carouselItem.appendChild(captionDiv);
+
+            carouselInner.appendChild(carouselItem);
+        });
     });
-  });
-
-  document.addEventListener("DOMContentLoaded", function() {
-    const carouselVoughtInner = document.querySelector('.carousel-carouselVought');
-    const carouselVoughtIndicators = document.querySelector('#carouselVought .carousel-indicators');
-
-    carouselVoughtData.forEach((item, index) => {
-      // Crear indicador
-      const indicator = document.createElement('button');
-      indicator.type = 'button';
-      indicator.dataset.bsTarget = '#carouselVought';
-      indicator.dataset.bsSlideTo = index;
-      indicator.ariaLabel = `Slide ${index + 1}`;
-      if (index === 0) {
-        indicator.classList.add('active');
-        indicator.ariaCurrent = 'true';
-      }
-      carouselVoughtIndicators.appendChild(indicator);
-
-      // Crear item del carrusel
-      const carouselItem = document.createElement('div');
-      carouselItem.classList.add('carousel-item');
-      if (index === 0) carouselItem.classList.add('active');
-      carouselItem.dataset.bsInterval = item.interval;
-
-      const img = document.createElement('img');
-      img.src = item.src;
-      img.alt = item.alt;
-      img.classList.add('d-block', 'w-20', 'h-20', 'heroes');
-
-      const logoDiv = document.createElement('div');
-      const logo = document.createElement('img');
-      logo.src = item.logo;
-      logo.alt = 'The Seven logo';
-      logo.classList.add('character_logo_seven');
-      logoDiv.appendChild(logo);
-
-      const captionDiv = document.createElement('div');
-      captionDiv.classList.add('carousel-caption', 'd-none', 'd-md-block');
-
-      const title = document.createElement('h5');
-      title.classList.add('text-white');
-      title.textContent = item.title;
-
-      const description = document.createElement('p');
-      description.classList.add('text-white');
-      description.textContent = item.description;
-
-      captionDiv.appendChild(title);
-      captionDiv.appendChild(description);
-
-      carouselItem.appendChild(img);
-      carouselItem.appendChild(logoDiv);
-      carouselItem.appendChild(captionDiv);
-
-      carouselVoughtInner.appendChild(carouselItem);
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function() {
-    const carouselElectoralInner = document.querySelector('.carousel-carouselElectoral');
-    const carouselElectoralIndicators = document.querySelector('#carouselElectoral .carousel-indicators');
-
-    carouselElectoralData.forEach((item, index) => {
-      // Crear indicador
-      const indicator = document.createElement('button');
-      indicator.type = 'button';
-      indicator.dataset.bsTarget = '#carouselElectoral';
-      indicator.dataset.bsSlideTo = index;
-      indicator.ariaLabel = `Slide ${index + 1}`;
-      if (index === 0) {
-        indicator.classList.add('active');
-        indicator.ariaCurrent = 'true';
-      }
-      carouselElectoralIndicators.appendChild(indicator);
-
-      // Crear item del carrusel
-      const carouselItem = document.createElement('div');
-      carouselItem.classList.add('carousel-item');
-      if (index === 0) carouselItem.classList.add('active');
-      carouselItem.dataset.bsInterval = item.interval;
-
-      const img = document.createElement('img');
-      img.src = item.src;
-      img.alt = item.alt;
-      img.classList.add('d-block', 'w-20', 'h-20', 'heroes');
-
-      const logoDiv = document.createElement('div');
-      const logo = document.createElement('img');
-      logo.src = item.logo;
-      logo.alt = 'The Seven logo';
-      logo.classList.add('character_logo_seven');
-      logoDiv.appendChild(logo);
-
-      const captionDiv = document.createElement('div');
-      captionDiv.classList.add('carousel-caption', 'd-none', 'd-md-block');
-
-      const title = document.createElement('h5');
-      title.classList.add('text-white');
-      title.textContent = item.title;
-
-      const description = document.createElement('p');
-      description.classList.add('text-white');
-      description.textContent = item.description;
-
-      captionDiv.appendChild(title);
-      captionDiv.appendChild(description);
-
-      carouselItem.appendChild(img);
-      carouselItem.appendChild(logoDiv);
-      carouselItem.appendChild(captionDiv);
-
-      carouselElectoralInner.appendChild(carouselItem);
-    });
-  });
+});
