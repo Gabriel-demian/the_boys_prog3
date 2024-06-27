@@ -395,22 +395,6 @@ footer .footer-links {
   box-shadow: 0 0 10px red;
 }
 
-.character_btn {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 23px;
-  border-radius: 999px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  background-color: #000;
-  color: #fff;
-  border: 1px solid #fff;
-  box-sizing: border-box;
-  transition: background-color .3s ease, color .3s ease;
-  padding: 14px 20px;
-}
-
 .carousel-inner {
   height: 80vh;
 }
@@ -478,11 +462,33 @@ main {
   color: #000;
 }
 
-.character_btn:hover,
-button.active {
+.character_btn {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+  border-radius: 999px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  transition: background-color .3s ease, color .3s ease;
+  padding: 14px 20px;
+}
+
+.character_btn.active {
   background-color: #fff;
   color: #000;
 }
+
+.character_btn:hover,
+.character_btn.active:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 
 
 /*********************************************************************/

@@ -28,19 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-document.getElementById('theSeven').addEventListener('click', function () {
-    document.getElementById('carouselTheSeven').classList.remove('hidden');
-    document.getElementById('carouselTheBoys').classList.add('hidden');
-    document.getElementById('carouselVought').classList.add('hidden');
-    document.getElementById('carouselElectoral').classList.add('hidden');
-
-    document.getElementById('theSeven').classList.add('active');
-    document.getElementById('theBoys').classList.remove('active');
-    document.getElementById('vought').classList.remove('active');
-    document.getElementById('electoralCandidates').classList.remove('active');
-    document.getElementById('carouselElectoral').classList.remove('active');
-});
-
 document.getElementById('theBoys').addEventListener('click', function () {
     document.getElementById('carouselTheBoys').classList.remove('hidden');
     document.getElementById('carouselTheSeven').classList.add('hidden');
@@ -49,6 +36,19 @@ document.getElementById('theBoys').addEventListener('click', function () {
 
     document.getElementById('theBoys').classList.add('active');
     document.getElementById('theSeven').classList.remove('active');
+    document.getElementById('vought').classList.remove('active');
+    document.getElementById('electoralCandidates').classList.remove('active');
+    document.getElementById('carouselElectoral').classList.remove('active');
+});
+
+document.getElementById('theSeven').addEventListener('click', function () {
+    document.getElementById('carouselTheSeven').classList.remove('hidden');
+    document.getElementById('carouselTheBoys').classList.add('hidden');
+    document.getElementById('carouselVought').classList.add('hidden');
+    document.getElementById('carouselElectoral').classList.add('hidden');
+
+    document.getElementById('theSeven').classList.add('active');
+    document.getElementById('theBoys').classList.remove('active');
     document.getElementById('vought').classList.remove('active');
     document.getElementById('electoralCandidates').classList.remove('active');
     document.getElementById('carouselElectoral').classList.remove('active');
