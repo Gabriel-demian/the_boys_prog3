@@ -173,6 +173,8 @@ h3 {
   color: #fff;
 }
 
+/********************************************************************************************/
+/*****************************GALERÍA*****************************/
 .video-container {
   position: relative;
   padding-bottom: 43.75%;
@@ -191,7 +193,6 @@ h3 {
   border: 0;
 }
 
-/********************************************************************************************/
 .secundario {
   margin-top: 5%;
   display: grid;
@@ -213,7 +214,8 @@ h3 {
 
 .secundario a img {
   width: 100%;
-  border-radius: 5%;
+  border-radius: 10%;
+  display: block;
 }
 
 .secundario div h4 {
@@ -577,7 +579,7 @@ main {
 
   .desktop-only {
     display: none;
-}
+  }
 
   .mobile-only {
      display: block;
@@ -641,9 +643,15 @@ main {
   .secundario {
     grid-template-columns: 1fr;
     text-align: center;
+    margin-bottom: 50px;
   }
 
-
+  .secundario a img {
+    width: 80%;
+    max-width: 300px; 
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
 
   .carousel-section {
     display: none;
@@ -653,6 +661,7 @@ main {
     display: block;
   }
 
+  /*********************************************************************/
   /*CARDS*/
   .cards-section {
     padding: 20px;
@@ -700,10 +709,6 @@ main {
     margin-right: 10px;
     scroll-snap-align: start;
   }
-  .secundario {
-    margin-bottom: 50px;
-  }
-
 }
 
 @media (max-width: 480px) {
