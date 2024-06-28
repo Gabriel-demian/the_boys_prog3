@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Enlaces a CSS y JavaScript necesarios -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body style="height: 100vh; display: flex; justify-content: center; align-items: center; background-color: #00050d;">
+
+
+    <section class="carousel-section" style="width: 100%;">
+        <!------------------------------------------------------------------------->
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <button id="theBoys" type="button" class="character_btn active">The Boys</button>
+            </li>
+            <li class="nav-item">
+                <button id="theSeven" type="button" class="character_btn">The Seven</button>
+            </li>
+            <li class="nav-item">
+                <button id="vought" type="button" class="character_btn">Vought</button>
+            </li>
+            <li class="nav-item">
+                <button id="electoralCandidates" type="button" class="character_btn">Electoral Candidates</button>
+            </li>
+        </ul>
+
+        <!------------------------------------------------------------------------->
+
+        <div id="carouselTheBoys" class="carousel carousel-dark slide" style="height: 80vh;">
+            <div class="carousel-indicators"></div>
+            <div class="carousel-inner carousel-carouselTheBoys"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTheBoys" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTheBoys" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!------------------------------------------------------------------------->
+
+        <div id="carouselTheSeven" class="carousel carousel-dark slide hidden" style="height: 80vh;">
+            <div class="carousel-indicators"></div>
+            <div class="carousel-inner carousel-carouselTheSeven"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTheSeven" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTheSeven" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!------------------------------------------------------------------------->
+
+        <div id="carouselVought" class="carousel carousel-dark slide hidden" style="height: 80vh;">
+            <div class="carousel-indicators"></div>
+            <div class="carousel-inner carousel-carouselVought"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselVought" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselVought" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+            
+        <!------------------------------------------------------------------------->
+
+        <div id="carouselElectoral" class="carousel carousel-dark slide hidden" style="height: 80vh;">
+            <div class="carousel-indicators"></div>
+            <div class="carousel-inner carousel-carouselElectoral"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselElectoral" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselElectoral" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!------------------------------------------------------------------------->
+    </section>
+
+    <script src="js/scriptCarrousel.js"></script>
+</body>
+
+</html>

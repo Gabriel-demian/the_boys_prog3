@@ -163,3 +163,45 @@ const carouselElectoralData = [
         });
     });
 });
+
+/********************************* BOTONES CARROUSEL *********************************/
+function handleButtonClick(activeButtonId, activeCarouselId) {
+    // Ocultar todos los carousels
+    const carouselIds = ['carouselTheBoys', 'carouselTheSeven', 'carouselVought', 'carouselElectoral'];
+    carouselIds.forEach(id => {
+        if (id !== activeCarouselId) {
+            document.getElementById(id).classList.add('hidden');
+        }
+    });
+
+    // Remover la clase 'active' de todos los botones
+    const buttonIds = ['theBoys', 'theSeven', 'vought', 'electoralCandidates'];
+    buttonIds.forEach(id => {
+        if (id !== activeButtonId) {
+            document.getElementById(id).classList.remove('active');
+        }
+    });
+
+    // Mostrar el carousel activo y marcar el botón como activo
+    document.getElementById(activeCarouselId).classList.remove('hidden');
+    document.getElementById(activeButtonId).classList.add('active');
+}
+
+
+// Asignar el evento de clic a cada botón
+document.getElementById('theBoys').addEventListener('click', function () {
+    handleButtonClick('theBoys', 'carouselTheBoys');
+});
+
+document.getElementById('theSeven').addEventListener('click', function () {
+    handleButtonClick('theSeven', 'carouselTheSeven');
+});
+
+document.getElementById('vought').addEventListener('click', function () {
+    handleButtonClick('vought', 'carouselVought');
+});
+
+document.getElementById('electoralCandidates').addEventListener('click', function () {
+    handleButtonClick('electoralCandidates', 'carouselElectoral');
+});
+/******************************************************************************************************/

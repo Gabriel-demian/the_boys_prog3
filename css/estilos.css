@@ -76,7 +76,6 @@ a {
 
 section {
   max-width: 1300px;
-  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -276,7 +275,6 @@ footer {
   background-repeat: no-repeat;
   min-height: 20vh;
   height: auto;
-  margin-top: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -553,9 +551,25 @@ main {
   margin: 10px 0;
 }
 
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
 /*********************************************************************/
 
 @media (max-width: 768px) {
+
+  .desktop-only {
+    display: none;
+}
+
+.mobile-only {
+    display: block;
+}
   .principal {
     height: auto;
     padding: 20px;
@@ -724,10 +738,10 @@ main {
   }
 
   section {
-    max-width: 480px;
-    width: 100%;
+    max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px 0;
   }
 
   .principal {
