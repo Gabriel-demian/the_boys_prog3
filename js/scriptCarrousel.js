@@ -65,7 +65,7 @@ const carouselVoughtData = [
         src: "images/characters/Ashley.png",
         alt: "Foto de Ashley",
         logo: "images/vought_logo.png",
-        title: "Ashley",
+        title: "Ashley Barrett",
         description: "Originalmente publicista de Vought, Ashley escaló rápidamente en la jerarquía corporativa para convertirse en CEO de la empresa. Sin embargo, recibió su ascenso después de que Homelander asesinara a su predecesora, Madelyn Stillwell, y recomendara a Ashley para el puesto. Aterrorizada por Homelander, Ashley ha sido leal hasta el extremo.",
         interval: 10000
     },
@@ -73,7 +73,7 @@ const carouselVoughtData = [
         src: "images/characters/Ryan.png",
         alt: "Foto de Ryan",
         logo: "images/vought_logo.png",
-        title: "Ryan",
+        title: "Ryan Butcher",
         description: "Ryan es el hijo de Homelander y el primer Supe nacido naturalmente, con poderes que igualan a los de su padre. Después de matar accidentalmente a su madre y esposa de Butcher, Becca, Ryan fue acogido por Grace Mallory para ser criado bajo protección de la CIA. Pero tras distanciarse de Butcher, eligió ocupar su lugar al lado de su padre.",
         interval: 10000
     }

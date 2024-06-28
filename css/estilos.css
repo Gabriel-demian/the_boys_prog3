@@ -103,14 +103,14 @@ section {
   justify-content: center;
   align-items: center;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
   margin-bottom: 20px;
 }
 
 .heroes {
-  object-fit: cover; 
-  margin-right: auto; 
-  margin-left: auto; 
+  object-fit: cover;
+  margin-right: auto;
+  margin-left: auto;
   height: 80vh;
 }
 
@@ -175,7 +175,7 @@ h3 {
 
 .video-container {
   position: relative;
-  padding-bottom: 43.75%; 
+  padding-bottom: 43.75%;
   height: 0;
   overflow: hidden;
   max-width: 100%;
@@ -190,6 +190,7 @@ h3 {
   height: 100%;
   border: 0;
 }
+
 /********************************************************************************************/
 .secundario {
   margin-top: 5%;
@@ -235,7 +236,7 @@ h3 {
 
 .secundario a::after {
   border-color: blue;
-  opacity: 0; 
+  opacity: 0;
 }
 
 .secundario a:hover::before,
@@ -273,7 +274,7 @@ footer {
   background-image: url(../images/b.jpg);
   background-position: top right;
   background-repeat: no-repeat;
-  min-height: 20vh; 
+  min-height: 20vh;
   height: auto;
   margin-top: 5vh;
   display: flex;
@@ -454,7 +455,7 @@ main {
   display: none;
 }
 
-.principal div img{
+.principal div img {
   width: 70%;
 }
 
@@ -488,8 +489,6 @@ main {
   background-color: #fff;
   color: #000;
 }
-
-
 
 /*********************************************************************/
 .reviews-section {
@@ -553,8 +552,8 @@ main {
   color: #ccc;
   margin: 10px 0;
 }
-/*********************************************************************/
 
+/*********************************************************************/
 
 @media (max-width: 768px) {
   .principal {
@@ -615,6 +614,64 @@ main {
   .secundario {
     grid-template-columns: 1fr;
   }
+
+  .carousel-section {
+    display: none;
+  }
+
+  .cards-section {
+    display: block;
+  }
+
+  /*CARDS*/
+  .cards-section {
+    padding: 20px;
+  }
+
+  .nav-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
+  .cards_btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 999px;
+  }
+
+  .cards_btn.active {
+    background-color: white;
+    color: red;
+    font-weight: bold;
+  }
+
+  .cards-section .card {
+    margin-bottom: 20px;
+  }
+
+  .cards-section .hidden {
+    display: none;
+  }
+
+  .cards-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .cards-carousel .card {
+    flex: 0 0 auto;
+    width: 18rem;
+    margin-right: 10px;
+    scroll-snap-align: start;
+  }
+
+
 }
 
 @media (max-width: 480px) {
@@ -705,11 +762,11 @@ main {
   footer {
     padding: 10px;
   }
-  
+
   footer a {
     margin: 5px;
   }
-  
+
   footer a img {
     max-width: 2rem;
   }

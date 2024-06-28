@@ -21,8 +21,6 @@ function loadHTML(containerId, url) {
         .catch(error => console.error('Error al cargar el archivo HTML:', error));
 }
 
-/******************************************************************************************************/
-
 // Cargar el header y el footer
 document.addEventListener('DOMContentLoaded', function() {
     loadHTML('header', 'header.html');
@@ -31,6 +29,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /******************************************************************************************************/
 
+function myFunction() {
+    var x = document.getElementById("menu_bar");
+    if (x.className === "") {
+        x.className += " responsive";
+    } else {
+        x.className = "";
+    }
+}
+
+function myFunction() {
+    var icon = document.querySelector('.icon');
+    var nav = document.querySelector('nav ul');
+    icon.classList.toggle('active');
+    nav.classList.toggle('active');
+}
+
+/******************************************************************************************************/
+/********************************* BOTONES CARROUSEL *********************************/
 function handleButtonClick(activeButtonId, activeCarouselId) {
     // Ocultar todos los carousels
     const carouselIds = ['carouselTheBoys', 'carouselTheSeven', 'carouselVought', 'carouselElectoral'];
@@ -53,6 +69,7 @@ function handleButtonClick(activeButtonId, activeCarouselId) {
     document.getElementById(activeButtonId).classList.add('active');
 }
 
+
 // Asignar el evento de clic a cada botón
 document.getElementById('theBoys').addEventListener('click', function () {
     handleButtonClick('theBoys', 'carouselTheBoys');
@@ -69,23 +86,8 @@ document.getElementById('vought').addEventListener('click', function () {
 document.getElementById('electoralCandidates').addEventListener('click', function () {
     handleButtonClick('electoralCandidates', 'carouselElectoral');
 });
-
 /******************************************************************************************************/
 
-function myFunction() {
-    var x = document.getElementById("menu_bar");
-    if (x.className === "") {
-        x.className += " responsive";
-    } else {
-        x.className = "";
-    }
-}
-
-function myFunction() {
-    var icon = document.querySelector('.icon');
-    var nav = document.querySelector('nav ul');
-    icon.classList.toggle('active');
-    nav.classList.toggle('active');
-}
-
-/******************************************************************************************************/
+document.getElementById('electoralCandidates').addEventListener('click', function () {
+    console.log('Botón Electoral clickeado');
+});
