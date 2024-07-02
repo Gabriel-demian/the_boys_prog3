@@ -547,11 +547,45 @@ main {
   margin-top: 5px;
 }
 
+.review-date span{
+  color: gray;
+}
+
 .review-content p {
   line-height: 1.6;
   color: #ccc;
   margin: 10px 0;
 }
+
+.review-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.review-overlay .review {
+  width: 80%;
+  max-width: 800px;
+  height: auto;
+  max-height: 80%;
+  overflow-y: auto;
+  background-color: #1c1c1c;
+  border: 2px solid #8b0000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/*********************************************************************/
 
 .desktop-only {
   display: block;
@@ -560,7 +594,6 @@ main {
 .mobile-only {
   display: none;
 }
-
 
 /*********************************************************************/
 
@@ -698,6 +731,7 @@ main {
     margin-right: 10px;
     scroll-snap-align: start;
   }
+    /*********************************************************************/
 }
 
 @media (max-width: 480px) {
