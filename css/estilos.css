@@ -204,7 +204,6 @@ h3 {
 .secundario a {
   display: block;
   position: relative;
-  overflow: hidden;
   transition: transform 0.3s ease;
 }
 
@@ -214,9 +213,15 @@ h3 {
 
 .secundario a img {
   width: 100%;
-  border-radius: 10%;
-  display: block;
+  border-radius: 15px;
+  border: 1px solid rgba(204, 98, 98, 0.522);
+  transition: 0.5s;
+  box-shadow: 0 0 10px red;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  max-width: 300px; 
 }
+
 
 .secundario div h4 {
   font-family: 'Roboto', sans-serif;
@@ -227,8 +232,7 @@ h3 {
   color: #e43131; 
 }
 
-.secundario a::before,
-.secundario a::after {
+.secundario a img::after {
   content: '';
   position: absolute;
   top: 0;
@@ -239,21 +243,6 @@ h3 {
   border-radius: 5%;
   pointer-events: none;
   transition: border-color 0.3s ease;
-}
-
-.secundario a::before {
-  border-color: red;
-  opacity: 0;
-}
-
-.secundario a::after {
-  border-color: blue;
-  opacity: 0;
-}
-
-.secundario a:hover::before,
-.secundario a:hover::after {
-  opacity: 1;
 }
 
 
