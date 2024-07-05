@@ -30,6 +30,30 @@ const carouselBoysData = [
         title: "MothersMilk",
         description: "Exmarine y brillante táctico, Butcher depende de M.M. para llevar a cabo los planes y mantener al equipo unido. M.M. ha odiado a los Super desde una edad temprana, después de que Soldier Boy matara a varios miembros de su familia. Ese trauma ahora se manifiesta como un comportamiento obsesivo-compulsivo y una diligencia que resulta valiosa en la lucha contra Vought.",
         interval: 10000
+    },
+    {
+        src: "images/characters/frenchie.png",
+        alt: "Foto de Frenchie",
+        logo: "images/black_logo.png",
+        title: "Frenchie",
+        description: "Frenchie es el hombre orquesta de The Boys, con habilidades en armas, explosivos, química y más. Ha desarrollado una relación cercana con Kimiko, una joven con habilidades sobrehumanas y un pasado oscuro, quien se unió a The Boys después de que la rescataran de un grupo terrorista. Frenchie lucha contra la drogadicción y la culpa por su antigua carrera como sicario trabajando para la notoria mafiosa rusa, Pequeña Nina",
+        interval: 10000
+    },
+    {
+        src: "images/characters/hughie_campbell.png",
+        alt: "Foto de Hughie Campbell",
+        logo: "images/black_logo.png",
+        title: "Hughie Campbell",
+        description: "Después de pasar su infancia adorando a los Supers, Hughie se unió a la cruzada de Butcher y The Boys contra sus antiguos héroes después de que su novia, Robin, fuera asesinada por uno de ellos. Tomó la decisión desesperada de usar Temp V con Butcher para igualar las fuerzas, pero se intoxicó peligrosamente con el poder que le otorgaba. El amor de su vida, Annie January, lo sacó del borde del abismo y lo ayudó a comprender que la verdadera fuerza no se trata del poder, sino de nunca rendirse en hacer lo correcto.",
+        interval: 10000
+    },
+    {
+        src: "images/characters/joe_kessler.png",
+        alt: "Foto de Joe Kessler",
+        logo: "images/black_logo.png",
+        title: "Joe Kessler",
+        description: "Definitivamente hay historia entre Butcher y Kessler. Como Oficial de Operaciones de la CIA y veterano de la Guerra contra el Terrorismo, su pasado se remonta a mucho tiempo atrás. Ahora, está presionando a Butcher para que llegue aún más lejos en su guerra contra Homelanderantes de que sea demasiado tarde.",
+        interval: 10000
     }
 ];
 
@@ -56,6 +80,30 @@ const carouselSevenData = [
         logo: "images/seven_logo.png",
         title: "Black Noir",
         description: "Un maestro del sigilo, Black Noir es un Supe con una larga historia en Vought. Anteriormente miembro del equipo de superhéroes de Soldier Boy, Payback, desde entonces se ha unido a Los Siete y se ha convertido en uno de los confidentes más cercanos de Homelander.",
+        interval: 10000
+    },
+    {
+        src: "images/characters/the_deep.png",
+        alt: "Foto de The Deep",
+        logo: "images/seven_logo.png",
+        title: "The Deep",
+        description: "The Deep es el Supe acuático de Los Siete, con súper fuerza, branquias y la habilidad de comunicarse con las criaturas marinas. Fue expulsado de Los Siete cuando Starlight lo acusó públicamente de agresión sexual y desde entonces ha hecho todo lo posible por demostrar su lealtad a Homelander, incluso asesinando al principal candidato a vicepresidente, lo que le abrió el camino a Victoria Neuman para unirse a la candidatura.",
+        interval: 10000
+    },
+    {
+        src: "images/characters/sister_sage.png",
+        alt: "Foto de Sister Sage",
+        logo: "images/seven_logo.png",
+        title: "Sister Sage",
+        description: "Conocida por ser la persona más inteligente del planeta, Sister Sage es una Supe de Detroit, Michigan, que es la siguiente en la fila para unirse a Los Siete.",
+        interval: 10000
+    },
+    {
+        src: "images/characters/a_train.png",
+        alt: "Foto de A-Train",
+        logo: "images/seven_logo.png",
+        title: "A-Train",
+        description: "Miembro de Los Siete y el hombre más rápido del mundo, A-Train ha sido un fiel seguidor de Homelander. Sin embargo, no pudo hacerse de la vista gorda cuando un Supe racista llamado Blue Hawk hirió gravemente a su hermano, Nathan, dejándolo en silla de ruedas. Al negarse Vought a tomar medidas, A-Train se hizo justicia por su mano y mató a Blue Hawk. Pero esa violencia no era la justicia que Nathan deseaba, y A-Train se alejó de su hermano, más desilusionado que nunca con Vought y la maldad de sus compañeros Supes.",
         interval: 10000
     }
 ];
