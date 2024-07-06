@@ -103,7 +103,7 @@ const carouselSevenData = [
         alt: "Foto de A-Train",
         logo: "images/seven_logo.png",
         title: "A-Train",
-        description: "Miembro de Los Siete y el hombre más rápido del mundo, A-Train ha sido un fiel seguidor de Homelander. Sin embargo, no pudo hacerse de la vista gorda cuando un Supe racista llamado Blue Hawk hirió gravemente a su hermano, Nathan, dejándolo en silla de ruedas. Al negarse Vought a tomar medidas, A-Train se hizo justicia por su mano y mató a Blue Hawk. Pero esa violencia no era la justicia que Nathan deseaba, y A-Train se alejó de su hermano, más desilusionado que nunca con Vought y la maldad de sus compañeros Supes.",
+        description: "Miembro de Los Siete y el hombre más rápido del mundo, A-Train ha sido un fiel seguidor de Homelander. Sin embargo, no pudo hacerse de la vista gorda cuando un Supe racista llamado Blue Hawk hirió gravemente a su hermano, Nathan, dejándolo en silla de ruedas. Al negarse Vought a tomar medidas, A-Train se hizo justicia por su mano y mató a Blue Hawk.",
         interval: 10000
     }
 ];
@@ -192,7 +192,7 @@ const carouselElectoralData = [
             const captionDiv = document.createElement('div');
             captionDiv.classList.add('carousel-caption', 'd-none', 'd-md-block');
 
-            const title = document.createElement('h5');
+            const title = document.createElement('h2');
             title.classList.add('text-white');
             title.textContent = item.title;
 
