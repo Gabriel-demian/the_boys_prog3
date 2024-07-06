@@ -314,13 +314,14 @@ footer .footer-links {
 
 
 .body_contacto {
-  background-image: url(../images/wallpaper.jpg);
-  background-size: cover;
-  background-position: center;
+  background-color: black;
+  background-image: url(../images/contacto-img.webp);
+  background-size: contain;
+  background-position: right; 
+  background-repeat: no-repeat; 
   height: 100vh;
   overflow: hidden;
 }
-
 .secundario_contacto {
   display: flex;
   justify-content: center;
